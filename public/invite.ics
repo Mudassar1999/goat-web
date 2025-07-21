@@ -1,0 +1,112 @@
+BEGIN:VCALENDAR
+METHOD:REQUEST
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Pakistan Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:+0500
+TZOFFSETTO:+0500
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:+0500
+TZOFFSETTO:+0500
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=Mehwish Zafar:mailto:mehwish.zafar@Techsurgeinc.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Adeel85245
+ 6@gmail.com:mailto:Adeel852456@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Muhammad U
+ sama Aziz:mailto:usama.aziz@tw1.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Muhammad A
+ sad Ikram:mailto:asad.ikram@tw1.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Aliza Bukh
+ ari:mailto:aliza.bukhari@Techsurgeinc.com
+DESCRIPTION;LANGUAGE=en-US:Dear Candidate\,\n\n\n\nAs discussed\, your inte
+ rview has been scheduled as per the details mentioned below. Kindly connec
+ t the call 10 minutes before the interview timings.\n\nTime: 12:00 PM\n\nD
+ ate: September 12\, 2023\n\nDay: Tuesday\n\n\n\nInterview will be based on
+  below skill sets which are as follows.\n\n\n\nGeneral Description\n\n\n\n
+ The position demands a skill full hands-on open stack developer having exp
+ erience in developing & operating CRM / BSS solutions for Telecom sector.\
+ n\n\n\nJob Description\n\n\n\nMajor Functions:\n\n\n\nHands on experience 
+ on either of given technology stack MERN\, MEAN and MEVN.\n\nWork with dev
+ elopers to produce clean\, efficient code based on specifications.\n\nInte
+ grate software components and third-party system using API's.\n\nKnowledge
+  of the software development life-cycle (Agile SCRUM methodologies).\n\nAb
+ ility to develop unit testing of code components or complete applications.
+ \n\n\n\nSkills requirements\n\n\n\n·      Angular JS/VUE / React.\n\n·  
+     Node JS.\n\n·      Java Script.\n\n·      My SQL.\n\n\n\nExperience 
+ and Education\n\n\n\n·      Minimum 3 + years of experience in related fi
+ eld.\n\n·      Experience of "Telecom / ISP" is preferred.\n\n·      BSS
+ \, CRM application development experience.\n\n·      Knowledge of B-RAS\,
+  Radius AAA is a plus.\n\n\n\nRegards\,\n\nMehwish Zafar\n\nManager Human 
+ Resource\n\ne: mehwish.zafar@Techsurgeinc.com<mailto:mehwish.zafar@Techsur
+ geinc.com>\n\nw: www.techsurgeinc.com<https://www.google.com/url?q=http%3A
+ %2F%2Fwww.techsurgeinc.com&sa=D&ust=1694003820000000&usg=AOvVaw2ShB_V6cwWa
+ CKBBWN_6mkb>\n\np: +92 35250751 EXT 102\n\n\n\n___________________________
+ _____________________________________________________\nMicrosoft Teams mee
+ ting\nJoin on your computer\, mobile app or room device\nClick here to joi
+ n the meeting<https://teams.microsoft.com/l/meetup-join/19%3ameeting_N2I0M
+ zk4ZGYtZTIzNC00MTIyLTk0YjctOGFjZDZjMzI1OTVl%40thread.v2/0?context=%7b%22Ti
+ d%22%3a%22bba64a4e-7c8e-49bf-b0bc-f69c7c9cf817%22%2c%22Oid%22%3a%22267e634
+ 5-8de8-4d2a-8240-e088776ada39%22%7d>\nMeeting ID: 287 269 008 531\nPasscod
+ e: Te69mY\nDownload Teams<https://www.microsoft.com/en-us/microsoft-teams/
+ download-app> | Join on the web<https://www.microsoft.com/microsoft-teams/
+ join-a-meeting>\nLearn More<https://aka.ms/JoinTeamsMeeting> | Meeting opt
+ ions<https://teams.microsoft.com/meetingOptions/?organizerId=267e6345-8de8
+ -4d2a-8240-e088776ada39&tenantId=bba64a4e-7c8e-49bf-b0bc-f69c7c9cf817&thre
+ adId=19_meeting_N2I0Mzk4ZGYtZTIzNC00MTIyLTk0YjctOGFjZDZjMzI1OTVl@thread.v2
+ &messageId=0&language=en-US>\n____________________________________________
+ ____________________________________\n
+UID:040000008200E00074C5B7101A82E008000000009EBCFB524AE2D901000000000000000
+ 0100000007A36A034D867CF44AD49877FB0459462
+SUMMARY;LANGUAGE=en-US:Interview|| Adeel || AM Software
+DTSTART;TZID=Pakistan Standard Time:20230912T120000
+DTEND;TZID=Pakistan Standard Time:20230912T123000
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20230908T114803Z
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:0
+LOCATION;LANGUAGE=en-US:Microsoft Teams Meeting
+X-MICROSOFT-CDO-APPT-SEQUENCE:0
+X-MICROSOFT-CDO-OWNERAPPTID:2121875870
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-ONLINEMEETINGINFORMATION:{"OnlineMeetingChannelId":null\,"Onlin
+ eMeetingProvider":3}
+X-MICROSOFT-SKYPETEAMSMEETINGURL:https://teams.microsoft.com/l/meetup-join/
+ 19%3ameeting_N2I0Mzk4ZGYtZTIzNC00MTIyLTk0YjctOGFjZDZjMzI1OTVl%40thread.v2/
+ 0?context=%7b%22Tid%22%3a%22bba64a4e-7c8e-49bf-b0bc-f69c7c9cf817%22%2c%22O
+ id%22%3a%22267e6345-8de8-4d2a-8240-e088776ada39%22%7d
+X-MICROSOFT-SCHEDULINGSERVICEUPDATEURL:https://api.scheduler.teams.microsof
+ t.com/teams/bba64a4e-7c8e-49bf-b0bc-f69c7c9cf817/267e6345-8de8-4d2a-8240-e
+ 088776ada39/19_meeting_N2I0Mzk4ZGYtZTIzNC00MTIyLTk0YjctOGFjZDZjMzI1OTVl@th
+ read.v2/0
+X-MICROSOFT-SKYPETEAMSPROPERTIES:{"cid":"19:meeting_N2I0Mzk4ZGYtZTIzNC00MTI
+ yLTk0YjctOGFjZDZjMzI1OTVl@thread.v2"\,"rid":0\,"mid":0\,"uid":null\,"priva
+ te":true\,"type":0}
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-REQUESTEDATTENDANCEMODE:DEFAULT
+X-MICROSOFT-LOCATIONDISPLAYNAME:Microsoft Teams Meeting
+X-MICROSOFT-LOCATIONSOURCE:None
+X-MICROSOFT-LOCATIONS:[{"DisplayName":"Microsoft Teams Meeting"\,"LocationA
+ nnotation":""\,"LocationUri":""\,"LocationStreet":""\,"LocationCity":""\,"
+ LocationState":""\,"LocationCountry":""\,"LocationPostalCode":""\,"Locatio
+ nFullAddress":""}]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT15M
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR

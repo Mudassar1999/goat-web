@@ -1,0 +1,244 @@
+.Allcommon-input-login {
+  width: 100%;
+
+  .Allcommon-input-login {
+    width: 100%;
+    padding: 14px 24px 14px 62px;
+    border-radius: 8px;
+    color: #ffff;
+    background-color: rgba(118, 118, 128, 0.24);
+    font-family: var(--font-sf-pro-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    /* 131.25% */
+    letter-spacing: -0.32px;
+    transition: 0.1s;
+    border: 2px solid transparent;
+  }
+
+  .Allcommon-input-login::placeholder {
+    color: #545456;
+  }
+
+  .Allcommon-input-login:focus {
+    outline: none;
+    box-shadow: none;
+    border: 2px solid #30d158;
+  }
+
+  .otpInput {
+    padding: 14px 24px;
+    border-radius: 8px;
+    color: #ffff;
+    background-color: rgba(118, 118, 128, 0.24);
+    font-family: var(--font-sf-pro-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    /* 131.25% */
+    letter-spacing: -0.32px;
+    transition: 0.1s;
+    border: 2px solid transparent;
+  }
+
+  .otpInput:focus {
+    outline: none;
+    box-shadow: none;
+    border: 2px solid #9fe870;
+  }
+
+  .countryCode {
+    position: absolute;
+    top: 50%;
+    left: 21px;
+    transform: translateY(-50%);
+    color: var(--Label-Color-Dark-Secondary, rgba(235, 235, 245, 0.6));
+    text-align: center;
+    font-family: var(--font-sf-pro-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.32px;
+  }
+
+  .color-placeholder {
+    color: rgba(235, 235, 245, 0.6);
+  }
+
+  .color-white {
+    color: white;
+  }
+}
+
+.maintextArea {
+  border: 2px solid transparent;
+  transition: 0.3s;
+  color: white;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.24px;
+}
+
+.maintextArea:focus {
+  outline: none;
+  box-shadow: none;
+  border: 2px solid var(--Default-SystemGreen-Dark, #30d158);
+}
+
+.squreCheckOtr {
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  width: 22px;
+  height: 22px;
+  margin-right: 0.5em;
+  // border: 1px solid var(--label-color-dark-tertiary, rgba(235, 235, 245, 0.3));
+  outline: none;
+  cursor: pointer;
+
+  .squreCheckinr {
+    .squreCheckOtrinput {
+      position: relative;
+      -webkit-appearance: none;
+      appearance: none;
+      /* creating a custom design */
+      width: 22px;
+      height: 22px;
+      margin-right: 0.5em;
+      border: 1px solid
+        var(--label-color-dark-tertiary, rgba(235, 235, 245, 0.3));
+      outline: none;
+      cursor: pointer;
+    }
+
+    .squreCheckOtrinput::after {
+      position: absolute;
+      content: "";
+      width: 22px;
+      height: 22px;
+      top: -1px;
+      left: -1px;
+      background-image: url(../../public/images/common/SelectedSquare.svg);
+    }
+  }
+}
+
+.ReactFlagsSelect-module_flagsSelect__2pfa2 {
+  position: initial !important;
+}
+
+.ReactFlagsSelect-module_selectOptions__3LNBJ {
+  width: 100% !important;
+}
+
+.check {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.trybg:checked {
+  position: relative;
+  width: 22px;
+  height: 22px;
+}
+
+.trybg:checked::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../public/images/common/Selected.svg);
+  background-size: cover;
+  border-radius: 100%;
+  width: 22px;
+  height: 22px;
+  top: -1px;
+  left: -1px;
+}
+
+.trybg[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1.5px solid rgba(235, 235, 245, 0.3);
+  border-radius: 100%;
+}
+
+.text-16-add-log {
+  font-family: var(--font-sf-pro-text);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.32;
+}
+
+// select{
+//   // Your existing styles for the select element
+
+//   & option {
+//     height: 100px !important;
+//     overflow-y: scroll;
+//   }
+// }
+
+.ourCustomDropDown {
+  margin-top: 4px;
+  border-radius: 9px;
+  padding: 14px 24px;
+  background-color: #29292c !important;
+  max-height: 156px !important;
+  li {
+    padding: 0px !important;
+    cursor: pointer;
+  }
+  span {
+    font-family: var(--font-sf-pro-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.32px;
+    color: #ffff;
+  }
+}
+
+.no-data {
+  font-family: var(--font-sf-pro-text);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.32px;
+  color: #ffff;
+}
+
+.no-dropdown {
+  padding: 0;
+  margin: 0;
+}
+
+.edit-league-desc {
+  // color: var(--Label-Color-Dark-Primary, #fff);
+  // color: rgba(235, 235, 245, 0.6);
+  /* Headline / Regular */
+  font-family: var(--font-sf-pro-text);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px; /* 129.412% */
+  letter-spacing: -0.408px;
+}
+.showbadge-heading {
+  color: #fff;
+  font-family: var(--font-sf-pro-text);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 129.412% */
+  letter-spacing: -0.408px;
+}

@@ -1,0 +1,277 @@
+.header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #161616;
+  z-index: 100;
+  transition: background-color 0.3s ease; // Optional: Add a smooth transition effect
+}
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+@import url(https://db.onlinewebfonts.com/c/1c45e28f8e86cc89876f003b953cc3e9?family=SF+Pro+Text+Regular);
+@import url(https://db.onlinewebfonts.com/c/28adc6c6fd652123c3e173389a8be17f?family=SF+Pro+Text+Bold);
+.navbar-main {
+  background-color: #161616;
+  display: flex;
+  justify-content: center;
+
+  .navbar-otr {
+    width: calc(100% - 376px);
+    padding: 19px 0px;
+    background-color: #161616;
+
+    @media screen and (max-width: 992px) {
+      width: calc(100% - 176px);
+    }
+
+    @media screen and (max-width: 550px) {
+      width: calc(100% - 32px);
+    }
+
+    .navbar-inr {
+      display: flex;
+      justify-content: space-between;
+      background-color: #161616;
+
+      .main {
+        display: flex;
+        align-items: center;
+        gap: 0px 12px;
+        .tryFont {
+          font-family: var(--font-sf-pro-display);
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 18px; /* 138.462% */
+          letter-spacing: -0.078px;
+        }
+
+        .tryFont2 {
+          font-family: var(--font-sf-pro-text);
+          font-size: 11px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 13px; /* 118.182% */
+          letter-spacing: 0.066px;
+        }
+
+        .tryFont3 {
+          color: #fff;
+          /* LargeTitle / Bold */
+          font-family: var(--font-sf-pro-text);
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 18px; /* 138.462% */
+          letter-spacing: -0.078px;
+        }
+
+        .navlogo-otr {
+          .navbar-logo {
+          }
+        }
+
+        .search-input-otr {
+          position: relative;
+          width: 358px;
+
+          @media screen and (max-width: 1024px) {
+            display: none;
+          }
+
+          .search-input {
+            width: 100%;
+            color: rgba(235, 235, 245, 0.6);
+            padding: 8px 16px 8px 37px !important;
+            border-radius: 10px;
+            background: rgba(118, 118, 128, 0.24);
+            border: 2px solid transparent;
+            font-family: var(--font-sf-pro-text);
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: -0.408px;
+          }
+
+          .magnify-icon {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+
+        .search-input:focus {
+          outline: none;
+          box-shadow: none;
+          border: 2px solid #9fe870;
+        }
+      }
+
+      .ul-items {
+        display: flex;
+        align-items: center;
+        gap: 0px 48px;
+
+        @media screen and (max-width: 1024px) {
+          display: none;
+        }
+
+        .li-items {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          &:hover {
+            .nav-icon {
+              color: #9fe870;
+            }
+
+            .nav-item {
+              color: #9fe870;
+            }
+          }
+
+          .nav-icon {
+            transition: 0.3s;
+            width: 25px;
+            height: 25px;
+            // color: rgba(235, 235, 245, 0.60);
+            // color: #9FE870;
+          }
+
+          .nav-item {
+            transition: 0.3s;
+          }
+        }
+
+        .li-drop {
+          position: relative;
+
+          .dropdown {
+            display: flex;
+            flex-direction: column;
+            gap: 8px 0px;
+            position: absolute;
+            top: 60px;
+            left: -64px;
+            background-color: cornflowerblue;
+            padding: 17px;
+            width: 196px;
+            border-radius: 12px;
+            border: 0.33px solid rgba(84, 84, 88, 0.65);
+            background: #1c1c1e;
+            z-index: 3;
+
+            .li-dropDown {
+              // &:not(:last-child){
+              //     border-bottom:  0.33px solid rgba(84, 84, 88, 0.65);
+              //     padding-bottom: 4px;
+              // }
+            }
+          }
+        }
+      }
+
+      .burgerIcon-main {
+        display: none;
+
+        @media screen and (max-width: 1024px) {
+          display: block;
+        }
+
+        .ul-items {
+          display: flex;
+          align-items: baseline;
+          flex-direction: column;
+          gap: 28px 0px;
+
+          .li-items {
+            display: flex;
+            flex-direction: column;
+            align-items: self-start;
+            justify-content: center;
+            gap: 5px 0px;
+
+            &:hover {
+              .nav-icon {
+                color: #9fe870;
+              }
+
+              .nav-item {
+                color: #9fe870;
+              }
+            }
+
+            .nav-icon {
+              transition: 0.3s;
+              width: 25px;
+              height: 25px;
+              // color: rgba(235, 235, 245, 0.60);
+              // color: #9FE870;
+            }
+
+            .nav-item {
+              transition: 0.3s;
+            }
+          }
+        }
+
+        .menu-content {
+          padding: 20px;
+          height: 100%;
+          overflow-y: auto;
+          background-color: #1111 !important;
+
+          .lucide-x-circle {
+            width: 37px;
+            height: 37px;
+            border-radius: 100%;
+          }
+
+          .dropdownMobile {
+            padding: 17px 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.off-canvas-menu {
+  position: fixed;
+  top: 0;
+  left: -340px; // Adjust the value to control the menu width and initial position
+  width: 340px; // Adjust the value to control the menu width
+  height: 100%;
+  background-color: #111;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease;
+  z-index: 1000;
+
+  &.open {
+    left: 0;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+  .close-button {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

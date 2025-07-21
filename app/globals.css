@@ -1,0 +1,917 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* html {
+  font-family: var(--font-sf-pro-text);
+} */
+
+.sf-pro-text {
+  font-family: var(--font-sf-pro-text);
+}
+
+.sf-pro-display {
+  font-family: var(--font-sf-pro-display);
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    /* @apply bg-background text-foreground; */
+    background: #111111;
+  }
+}
+
+.phone-input {
+  background: rgba(118, 118, 128, 0.24) !important;
+  width: 100% !important;
+  border: none !important;
+}
+
+.phone-dropdown {
+  background: rgba(118, 118, 128, 0.24) !important;
+  border: none !important;
+}
+
+.react-tel-input .selected-flag:hover,
+.react-tel-input .selected-flag:focus {
+  background: transparent !important;
+}
+
+.stepline {
+  background-color: rgba(84, 84, 88, 0.65);
+}
+
+.scroll-remover::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scroll-remover {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.pitch.responsive {
+  border-radius: 16px;
+}
+
+.player {
+  border: 1px dashes #fff;
+}
+
+.name {
+  border: 2px dotted #fff;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.try:not(:last-child) {
+  border-bottom: 1px solid rgba(84, 84, 88, 0.65);
+}
+
+/* @font-face {
+  font-family: "SF Pro Display";
+  src:
+    local("SF Pro Display"),
+    url(../public/fonts/sf-pro-display-cufonfonts/SFPRODISPLAYREGULAR.OTF)
+      format("truetype");
+} */
+/* @font-face {
+  font-family: "SF Pro Display";
+  font-weight: 400;
+  src:
+    local("SF Pro Display"),
+    url("/fonts/sf-pro-display-cufonfonts/SFPRODISPLAYREGULAR.OTF") format("truetype");
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  font-weight: 400;
+  src:
+    local("SF Pro Text"),
+    url("/fonts/sf-pro-text/SF-Regular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  font-weight: 500;
+  src:
+    local("SF Pro Text"),
+    url("/fonts/sf-pro-text/SF-Medium.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  font-weight: 600;
+  src:
+    local("SF Pro Text"),
+    url("/fonts/sf-pro-text/SF-Semibold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  font-weight: 700;
+  src:
+    local("SF Pro Text"),
+    url("/fonts/sf-pro-text/SF-Bold.otf") format("truetype");
+} */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    /* font-family: "SF Pro Text"; */
+  }
+}
+
+/* * {
+  font-family: var(--sf-pro-text);
+} */
+.phone-input {
+  background: rgba(118, 118, 128, 0.24) !important;
+  width: 100% !important;
+  border: none !important;
+}
+
+.phone-dropdown {
+  background: rgba(118, 118, 128, 0.24) !important;
+  border: none !important;
+}
+
+.react-tel-input .selected-flag:hover,
+.react-tel-input .selected-flag:focus {
+  background: transparent !important;
+}
+
+.stepline {
+  background-color: rgba(84, 84, 88, 0.65);
+}
+
+.scroll-remover::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scroll-remover {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.pitch.responsive {
+  border-radius: 16px;
+}
+
+.player {
+  border: 1px dashes #fff;
+}
+
+.name {
+  border: 2px dotted #fff;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.checkbox-wrapper input[type="checkbox"],
+.radio-wrapper input[type="radio"] {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  width: 16px;
+  height: 16px;
+  margin-right: 0.5em;
+  border: 1px solid var(--label-color-dark-tertiary, rgba(235, 235, 245, 0.3));
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox-wrapper .checkbox-edit-league-form[type="checkbox"]{
+   /* removing default appearance */
+   -webkit-appearance: none;
+   appearance: none;
+   /* creating a custom design */
+   width: 22px;
+   height: 22px;
+   margin-right: 0.5em;
+   border: 1px solid var(--label-color-dark-tertiary, rgba(235, 235, 245, 0.3));
+   outline: none;
+   cursor: pointer;
+   border-radius: 100%;
+}
+.checkbox-edit-league-form[type="checkbox"]::after{
+  /* content: "";
+  background-image: url(../public/images/common/SelectedSquare.svg);
+  font-size: 13px;
+  font-weight: bold;
+  color: #163300;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: -1px;
+  top: -1px;
+  border-radius: 100%; */
+}
+
+
+
+.radio-wrapper input[type="radio"] {
+  border-radius: 50%;
+}
+
+.checkbox-wrapper input:checked,
+.radio-wrapper input:checked {
+  position: relative;
+}
+
+.checkbox-wrapper input:checked::before,
+.radio-wrapper input:checked::before {
+  position: absolute;
+  content: "";
+  background-image: url(../public/images/common/SelectedSquare.svg);
+  font-size: 13px;
+  font-weight: bold;
+  color: #163300;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: -1px;
+  top: -1px;
+  border-radius: 100%;
+}
+
+.checkbox-wrapper .checkbox-experienceFrom:checked {
+  background-color: #9fe870;
+  position: relative;
+  width: 22px !important;
+  height: 22px  !important;
+  border-radius: 4px;
+}
+
+.checkbox-wrapper .checkbox-experienceFrom{
+  width: 22px !important;
+  height: 22px  !important;
+  border-radius: 4px;
+}
+.checkbox-wrapper .checkbox-experienceFrom:checked::before {
+  content: "";
+  background-image: url(../public/images/common/SelectedSquare.svg);
+  font-size: 13px;
+  font-weight: bold;
+  color: #163300;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: -1px;
+  top: -1px;
+}
+
+.checkbox-wrapper-league .checkbox-edit-league-form:checked {
+  /* background-color: #9fe870; */
+  /* position: relative;
+  width: 22px !important;
+  height: 22px  !important; */
+}
+
+.checkbox-wrapper-league .checkbox-edit-league-form{
+  /* width: 22px !important;
+  height: 22px  !important;
+  border-radius: 100%; */
+}
+.checkbox-wrapper-league .checkbox-edit-league-form:checked::before {
+  /* content: "";
+  background-image: url(../public/images/common/SelectedSquare.svg);
+  font-size: 13px;
+  font-weight: bold;
+  color: #163300;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: -1px;
+  top: -1px;
+  border-radius: 100%; */
+}
+
+.experiencecheckbox{
+  
+}
+.radio-wrapper .radio-Right:checked {
+  position: relative;
+  width: 22px;
+  height: 22px;
+}
+
+.radio-wrapper .radio-Right:checked::before {
+  position: absolute;
+  background-image: url(../public/images/common/Selected.svg);
+  background-size: cover;
+  border-radius: 100%;
+  top: -1px;
+  left: -1px;
+  content: "";
+  width: 22px;
+  height: 22px;
+}
+
+.input-otr {
+  width: 100%;
+}
+
+.input-otr .input-inr {
+  width: 100%;
+  padding: 14px 24px;
+  border-radius: 8px;
+  color: white;
+  background: rgba(118, 118, 128, 0.24);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.32px;
+  font-family: var(--font-sf-pro-text);
+  border: 2px solid #9fe870;
+}
+
+.input-otr .input-inr::placeholder {
+  color: var(--Accessible-SystemGray-03-Dark, #545456);
+}
+
+.input-otr .input-inr:focus {
+  outline: none;
+  box-shadow: none;
+  border: 2px solid #9fe870 !important;
+}
+
+.input-otr .inputGreen:focus {
+  outline: none;
+  box-shadow: none;
+  border: 2px solid #9fe870 !important;
+}
+
+.input-otr .inputRed:focus {
+  outline: none;
+  box-shadow: none;
+  border: 2px solid #ff453a !important;
+}
+
+.input-otr .input-inr:hover {
+  background-color: none !important;
+}
+
+.input-otr .inputGreen {
+  border: 2px solid green;
+}
+
+.input-otr .inputRed {
+  border: 2px solid #ff453a;
+}
+
+.close-popup {
+  background-color: rgba(116, 116, 128, 0.18);
+  color: #fff;
+}
+
+.infoWrapper {
+  padding: 208px 0px 149px 0px;
+}
+
+.addNameWrapper {
+  padding: 265px 0px 206px 0px;
+}
+
+.currentPlayWrapper {
+  padding: 259px 0px 200px 0px;
+}
+
+.clubTeamWrapper {
+  padding: 105px 0px 46px 0px;
+}
+
+.positionWrapper {
+  padding: 147px 0px 53px 0px;
+}
+
+.dominanceFootWrapper {
+  padding: 221px 0px 162px 0px;
+}
+
+.color-white {
+  color: #fff !important;
+}
+
+input-otr .input-inr2:focus {
+  /* border: 2px solid red !important; */
+}
+
+.flag-selector .ReactFlagsSelect-module_selectBtn__19wW7 {
+  /* padding: 12px 24px !important; */
+  width: 114px !important;
+  height: 53px !important;
+}
+
+.img-main {
+  display: flex;
+  align-items: center;
+}
+
+.api-img-otr {
+  width: 96px !important;
+  height: 96px !important;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.img {
+  width: 47px;
+  height: 47px;
+  border-radius: 100%;
+  object-fit: contain;
+}
+
+/* .ReactFlagsSelect-module_selectValue__152eS
+  .ReactFlagsSelect-module_selectFlag__2q5gC */
+.football-ground {
+  background-image: url(../public/images/Frame\ 9.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 14px;
+  position: relative;
+  height: 434px;
+}
+
+.football-ground .player-button {
+  position: absolute;
+  background-color: #36735d;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  text-align: center;
+  border: 2px dashed #fff;
+  width: 30px;
+  height: 30px;
+}
+
+/* positions for buttons */
+.football-ground .player-button:nth-child(1) {
+  top: 81px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.football-ground .player-button:nth-child(2) {
+  top: 119px;
+  left: 20px;
+}
+
+.football-ground .player-button:nth-child(3) {
+  top: 119px;
+  right: 20px;
+}
+
+.football-ground .player-button:nth-child(4) {
+  top: 178px;
+  left: 104px;
+}
+
+.football-ground .player-button:nth-child(5) {
+  top: 178px;
+  right: 104px;
+}
+
+.football-ground .player-button:nth-child(6) {
+  left: 50%;
+  bottom: 142px;
+  transform: translateX(-50%);
+}
+
+.football-ground .player-button:nth-child(7) {
+  bottom: 51px;
+  left: 20px;
+}
+
+.football-ground .player-button:nth-child(8) {
+  bottom: 51px;
+  left: 104px;
+}
+
+.football-ground .player-button:nth-child(9) {
+  bottom: 51px;
+  right: 104px;
+}
+
+.football-ground .player-button:nth-child(10) {
+  bottom: 51px;
+  right: 20px;
+}
+
+.football-ground .player-button:nth-child(11) {
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.basketball-ground {
+  background-image: url(../public/images/common/basketballCourt.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 14px;
+  position: relative;
+}
+
+.basketball-ground .player-button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  text-align: center;
+  border: 2px dashed #9fe870;
+  width: 30px;
+  height: 30px;
+}
+
+/* positions for buttons */
+.basketball-ground .player-button:nth-child(1) {
+  bottom: 165px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.basketball-ground .player-button:nth-child(2) {
+  bottom: 125px;
+  left: 40px;
+}
+
+.basketball-ground .player-button:nth-child(3) {
+  bottom: 90px;
+  right: 80px;
+}
+
+.basketball-ground .player-button:nth-child(4) {
+  bottom: 53px;
+  left: 24%;
+}
+
+.basketball-ground .player-button:nth-child(5) {
+  bottom: 35px;
+  right: 21%;
+}
+
+.handball-ground {
+  background-image: url(../public/images/common/handballGround.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 14px;
+  position: relative;
+}
+
+.handball-ground .player-button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  text-align: center;
+  border: 2px dashed #9fe870;
+  width: 30px;
+  height: 30px;
+}
+
+/* positions for buttons */
+.handball-ground .player-button:nth-child(1) {
+  bottom: 150px;
+  left: 35%;
+}
+
+.handball-ground .player-button:nth-child(2) {
+  bottom: 170px;
+  left: 12px;
+}
+
+.handball-ground .player-button:nth-child(3) {
+  bottom: 170px;
+  right: 11px;
+}
+
+.handball-ground .player-button:nth-child(4) {
+  bottom: 85px;
+  left: 51px;
+}
+
+.handball-ground .player-button:nth-child(5) {
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.handball-ground .player-button:nth-child(6) {
+  bottom: 85px;
+  right: 51px;
+}
+
+/* Profile page */
+/* .profile-avatar {
+  background-image: url(../public/images/common/image.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 335px;
+} */
+
+.scrollbar-style::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+.scrollbar-style::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.07);
+  /* Set the background color of the thumb */
+  border-radius: 4px;
+  /* Round the corners of the thumb */
+}
+
+.scrollbar-style::-webkit-scrollbar-thumb {
+  background-color: #9fe870;
+  /* Set the background color of the thumb */
+  border-radius: 4px;
+  /* Round the corners of the thumb */
+}
+
+.primary-text-color {
+  color: #9fe870;
+}
+
+.primary-bg-color {
+  background-color: #9fe870;
+}
+
+.text-soft-lavender {
+  color: rgba(235, 235, 245, 0.6);
+}
+
+.home-reel video {
+  border-radius: 16px;
+  /* height: calc(450px + ((100vw - 768px) / 1152) * 200) !important; */
+  object-fit: cover;
+}
+
+.comment-reel video {
+  max-height: 100vh;
+  object-fit: cover;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* upload reel */
+.uploaded-reel video {
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.upload-reel-bg {
+  background-image: url(../public/images/common/upload-reel.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* posts */
+.posts-reel video {
+  /* max-height: 176px; */
+  object-fit: cover;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.menu-flags input {
+  margin: 0;
+  width: 100%;
+}
+
+.ReactFlagsSelect-module_filterBox__3m8EU {
+  padding-top: 0px !important;
+}
+
+ul.ReactFlagsSelect-module_selectOptions__3LNBJ.ReactFlagsSelect-module_selectOptionsWithSearch__1W03w.ReactFlagsSelect-module_fullWidthOptions__1XeR6 {
+  border-radius: 8px;
+}
+
+.ReactFlagsSelect-module_filterBox__3m8EU input {
+  margin: 0px 0px !important;
+  width: 100% !important;
+}
+
+.ReactFlagsSelect-module_selectOptions__3LNBJ {
+  border: none !important;
+}
+
+.ReactFlagsSelect-module_selectBtn__19wW7 {
+  display: flex;
+  justify-content: center !important;
+}
+
+.customSmallBtn-otr {
+  display: flex;
+  width: 50%;
+}
+
+.customSmallBtn-otr .customSmallBtn-inr {
+  padding: 14px 10px;
+}
+
+.heading {
+  font-family: var(--font-sf-pro-display);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px;
+  /* 121.429% */
+  letter-spacing: 0.36px;
+}
+
+.heading-main {
+  color: #fff;
+  font-family: var(--font-sf-pro-display);
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0.374px;
+}
+
+.football-ground {
+  background-image: url(../public/images/common/ground.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 14px;
+  position: relative;
+}

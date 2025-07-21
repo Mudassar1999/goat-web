@@ -1,0 +1,17 @@
+.general-container {
+    background-color: #7676803d;
+    border-radius: 14px;
+    margin-top: 8px;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px 16px;
+    cursor: pointer;
+}
+
+.border-below {
+    border-bottom: 0.33px solid var(--Separator-Color-Dark-With-Transparency, rgba(84, 84, 88, 0.65));
+}

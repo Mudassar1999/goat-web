@@ -1,0 +1,152 @@
+.main-commentSection {
+  height: 100vh;
+
+  @media screen and (max-width: 1124px) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
+
+  .goatReel-otr {
+    .goatReel-inr {
+      width: 472px;
+
+      @media screen and (max-width: 470px) {
+        height: 100%;
+      }
+    }
+  }
+
+  .comments-section {
+    width: 390px;
+    position: relative;
+    flex-direction: column;
+
+    @media screen and (max-width: 1124px) {
+      width: 100%;
+    }
+  }
+
+  .commentsArea {
+    @media screen and (max-width: 1124px) {
+      height: 200px;
+    }
+
+    // .forResponsiveReels {
+    //   width: 472px;
+
+    //   @media screen and (max-width: 500px) {
+    //     width: 400px;
+    //   }
+
+    //   @media screen and (max-width: 400px) {
+    //     height: 100vh;
+    //     width: 370px;
+    //   }
+    // }
+
+    .comments-section {
+      .commentDesc {
+        height: 45px;
+        width: 270px;
+        overflow: hidden;
+        overflow-y: auto;
+      }
+
+      @media screen and (max-width: 1024px) {
+        width: 100%;
+      }
+
+      .commentsArea {
+        @media screen and (max-width: 1024px) {
+          height: 70px;
+        }
+      }
+    }
+  }
+}
+
+.sliderContent {
+  width: 358px !important;
+  bottom: 16px !important;
+
+  @media screen and (max-width: 1200px) {
+    bottom: 32px !important;
+    width: 270px !important;
+  }
+}
+
+.logOut-Otr {
+  padding: 70px 24px 24px 24px;
+  background-color: rgba(116, 116, 128, 0.18);
+  border-radius: 40px;
+
+  .headingLogout {
+    font-family: var(--font-sf-pro-display);
+    color: #fff;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0.36px;
+  }
+
+  .desc-LogOut {
+    color: var(--Label-Color-Dark-Secondary, rgba(235, 235, 245, 0.6));
+  }
+}
+
+.comment-heading {
+  font-family: var(--font-sf-pro-text);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.078px;
+  color: var(--Label-Color-Dark-Secondary, rgba(235, 235, 245, 0.6));
+}
+
+.comment-desc {
+  font-family: var(--font-sf-pro-text);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  /* 131.25% */
+  letter-spacing: -0.32px;
+  color: var(--Label-Color-Dark-Primary, #fff);
+  // width: 270px;
+}
+
+.Claim-popup-otr {
+  .Claim-popup-inner {
+    padding: 0px;
+  }
+}
+
+.comment-Likes {
+  color: var(--Label-Color-Dark-Secondary, rgba(235, 235, 245, 0.6));
+  font-family: var(--font-sf-pro-text);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  /* 133.333% */
+}
+
+.comment-input-field:focus {
+  border: 2px solid #30d158;
+  outline: none;
+  box-shadow: none;
+}
+
+.comment-input-field {
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.carasoul-font {
+  font-family: var(--font-sf-pro-text);
+}

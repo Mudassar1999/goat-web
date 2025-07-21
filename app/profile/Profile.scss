@@ -1,0 +1,1276 @@
+.profile-otr {
+  display: flex;
+  width: calc(100% - 376px);
+  margin: 0 auto;
+  gap: 0px 24px;
+  padding-top: 32px;
+
+  @media screen and (max-width: 1320px) {
+    flex-direction: column;
+    gap: 24px 0px;
+    // width: calc(100% - 176px);
+  }
+
+  @media screen and (max-width: 992px) {
+    width: calc(100% - 176px);
+  }
+
+  @media screen and (max-width: 550px) {
+    width: calc(100% - 32px);
+  }
+
+  .profileContent-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px 0px;
+
+    .profileContent-left-otr {
+      padding: 16px 16px 0px 16px;
+      position: relative;
+
+      .LastImageProfileImgOtr {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+
+        .LastImageProfileImgInr {
+          width: 100%;
+          height: 120px;
+          object-fit: cover;
+          border-radius: 14px 14px 0px 0px;
+        }
+      }
+
+      .userProfileimgOtr {
+        position: absolute;
+        left: 50%;
+        top: 70px;
+        width: 97px;
+        transform: translateX(-50%);
+
+        .userProfileimg {
+          width: 97px;
+          height: 97px;
+          border-radius: 100%;
+          object-fit: cover;
+          border: 2px solid
+            var(--System-Background-Dark-Base-Secondary, #1c1c1e);
+        }
+
+        .forTry {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+      }
+
+      .profileContent-left-inr {
+        position: relative;
+
+        .profile-bg-otr {
+          width: 225px;
+          padding-top: 60px;
+          position: relative;
+          margin: 0 auto;
+
+          .profile-bg {
+            width: 220px !important;
+            object-fit: cover;
+          }
+
+          .clubs-images-otr {
+            position: absolute;
+            top: 163px;
+            left: 17px;
+            width: 36px;
+            height: 36px;
+            // background-color: white;
+            border-radius: 100%;
+
+            .club-image {
+              color: transparent;
+              height: 36px;
+              width: 36px;
+              border-radius: 100%;
+            }
+          }
+
+          .circle-img {
+            position: absolute;
+            right: 21px;
+            top: 120px;
+          }
+
+          .namCenter {
+            position: absolute;
+            top: 58%;
+            left: 48%;
+            transform: translateX(-50%);
+            border-bottom: 1px solid;
+            width: 85%;
+            padding-bottom: 8px;
+          }
+
+          .DateCenter {
+            position: absolute;
+            bottom: 25%;
+            font-size: 12px;
+            left: 13px;
+          }
+
+          .weightCenter {
+            position: absolute;
+            bottom: 20%;
+            font-size: 12px;
+            left: 0;
+            width: 100px;
+            text-align: center;
+          }
+
+          .heightcenter {
+            position: absolute;
+            bottom: 15%;
+            font-size: 12px;
+            left: 0;
+            width: 100px;
+            text-align: center;
+          }
+
+          .CnameCenter {
+            position: absolute;
+            bottom: 25%;
+            font-size: 12px;
+            right: 2px;
+            width: 100px;
+            text-align: center;
+          }
+
+          .PCenter {
+            position: absolute;
+            bottom: 20%;
+            font-size: 12px;
+            right: 2px;
+            width: 100px;
+            text-align: center;
+          }
+
+          .imageCenterOtr {
+            width: 42px;
+            position: absolute;
+            bottom: 15%;
+            left: 51%;
+            transform: translateX(-50%);
+
+            .imageCenterInr {
+            }
+          }
+
+          // .textCenter{
+          //     position: absolute;
+          //     bottom: 15%;
+          //     font-size: 12px;
+          //     right: 18px;
+          // }
+          .info-player {
+            position: absolute;
+            bottom: 49px;
+            left: 38%;
+            transform: translateX(-50%);
+
+            .forgap {
+              display: flex;
+              gap: 0px 8px;
+              width: 120%;
+
+              .date {
+                display: flex;
+                flex-direction: column;
+              }
+            }
+          }
+
+          .addIcon {
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+
+        .scoutbtn-otr {
+          display: flex;
+          position: absolute;
+          top: 0;
+          right: 0;
+
+          .scoutbtn-inr {
+            padding: 2px 8px;
+            border-radius: 99px;
+            background: #9fe870;
+            display: flex;
+            align-items: center;
+            gap: 0px 5px;
+            color: #163300;
+            text-align: center;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 13px;
+            letter-spacing: 0.066px;
+
+            .scoutbtn-icon {
+            }
+          }
+        }
+
+        .details {
+          padding-top: 200px;
+          text-align: center;
+
+          .detailname {
+            color: #fff;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 0.35px;
+          }
+
+          .mail {
+            color: rgba(235, 235, 245, 0.6);
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: -0.24px;
+          }
+        }
+
+        .profileUserimages-otr {
+          .profileUserimages-inr {
+            display: flex;
+            margin: 0 auto;
+            width: 64px;
+            padding-top: 38px;
+
+            .userImage1 {
+              position: relative;
+
+              .userImage {
+                width: 16px;
+                height: 16px;
+                width: 16px;
+                height: 16px;
+                border-radius: 100%;
+                border: 1px solid #1c1c1e;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: yellow;
+                color: black;
+              }
+            }
+
+            .userImage2 {
+              position: relative;
+              left: -4px;
+
+              .userImage {
+                width: 16px;
+                height: 16px;
+                width: 16px;
+                height: 16px;
+                border-radius: 100%;
+                border: 1px solid #1c1c1e;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: yellow;
+                color: black;
+              }
+            }
+
+            .userImage3 {
+              position: relative;
+              left: -8px;
+
+              .userImage {
+                width: 16px;
+                height: 16px;
+                width: 16px;
+                height: 16px;
+                border-radius: 100%;
+                border: 1px solid #1c1c1e;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: yellow;
+                color: black;
+              }
+            }
+
+            .userImage4 {
+              position: relative;
+              left: -12px;
+
+              .userImage {
+                width: 16px;
+                height: 16px;
+                width: 16px;
+                height: 16px;
+                border-radius: 100%;
+                border: 1px solid #1c1c1e;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: yellow;
+                color: black;
+              }
+            }
+
+            .userImage5 {
+              position: relative;
+              left: -16px;
+
+              .userImage {
+                width: 16px;
+                height: 16px;
+                width: 16px;
+                height: 16px;
+                border-radius: 100%;
+                border: 1px solid #1c1c1e;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: yellow;
+                color: black;
+              }
+            }
+          }
+
+          .desc-userImages {
+            padding-top: 6px;
+            padding-bottom: 16px;
+            text-align: center;
+            color: rgba(235, 235, 245, 0.6);
+            text-align: center;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 13px;
+            letter-spacing: 0.066px;
+          }
+        }
+
+        .LastImageProfile-otr {
+          .LastImageProfileImgOtr {
+            .LastImageProfileImgInr {
+            }
+          }
+
+          .userProfileimgOtr {
+            .userProfileimg {
+            }
+          }
+        }
+
+        .LastImageProfile-otr {
+          .LastImageProfileImgOtr {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border-radius: 14px 14px 0px;
+            height: 12px;
+            width: 100%;
+
+            .LastImageProfileImgInr {
+              border-radius: 14px 14px 0px 0px;
+              object-fit: cover;
+              height: 120px;
+              width: 100% !important;
+            }
+          }
+
+          // .userProfileimgOtr{
+          //     position: absolute;
+          //     bottom: 64px;
+          //     left: 50%;
+          //     transform: translateX(-50%);
+          //     .userProfileimg{
+          //         object-fit: cover;
+          //         border-radius: 100%;
+          //         width: 96px;
+          //         height: 96px;
+          //         border: 2px solid var(--System-Background-Dark-Base-Secondary, #1C1C1E);
+          //     }
+          //     .forTry{
+
+          //     }
+          // }
+        }
+
+        .userProfileimgOtr {
+          position: absolute;
+          top: 88px;
+          left: 50%;
+          transform: translateX(-50%);
+
+          .userProfileimg {
+            width: 97px;
+            height: 97px;
+            border-radius: 100%;
+            object-fit: cover;
+            border: 2px solid #1c1c1e;
+          }
+
+          .forTry {
+          }
+        }
+
+        .expBorder {
+          border: 0.333px solid rgba(84, 84, 88, 0.65);
+
+          .expHeading {
+            color: #fff;
+            font-family: var(--font-sf-pro-display);
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 0.35px;
+          }
+        }
+      }
+
+      .profileContent-right {
+        .network-otr {
+          .network-inr {
+            padding: 32px;
+            border-radius: 14px;
+            border: 0.33px solid rgba(84, 84, 88, 0.65);
+            background: #1c1c1e;
+
+            .network-heading {
+              padding-bottom: 20px;
+              color: #fff;
+              font-size: 22px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 28px;
+              letter-spacing: 0.35px;
+            }
+
+            .networkprofile-main {
+              display: flex;
+              flex-direction: column;
+              gap: 16px 0px;
+              height: 384px;
+              overflow: hidden;
+              overflow-y: auto;
+
+              .networkprofile-otr {
+                .networkprofile-inr {
+                  display: flex;
+                  gap: 0px 12px;
+
+                  .networkuserImg-otr {
+                    .networkUser-img {
+                      width: 32px;
+                      height: 32px;
+                      border-radius: 100%;
+                    }
+                  }
+
+                  .networkProflie-content {
+                    .Network-userName {
+                      font-family: var(--font-sf-pro-text);
+                      color: #fff;
+                      font-size: 17px;
+                      font-style: normal;
+                      font-weight: 600;
+                      line-height: 22px;
+                      letter-spacing: -0.408px;
+                    }
+
+                    .Network-userdesc {
+                      padding: 4px 0px 4px 0px;
+                      color: #fff;
+                      font-size: 15px;
+                      font-style: normal;
+                      font-weight: 400;
+                      line-height: 20px;
+                      letter-spacing: -0.24px;
+                    }
+
+                    .networkProfilebtn-otr {
+                      display: flex;
+
+                      .networkProfilebtn-inr {
+                        font-family: var(--font-sf-pro-text);
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        gap: 0px 6px;
+                        padding: 7px 20px;
+                        border-radius: 10px;
+                        border: 1px solid #9fe870;
+                        color: #9fe870;
+                        font-size: 13px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 18px;
+                        letter-spacing: -0.078px;
+                      }
+
+                      .plusIcon {
+                        color: transparent;
+                        width: 11px;
+                        height: 11px;
+                        object-fit: cover;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .settingbtn-otr {
+      display: flex;
+      position: absolute;
+      top: 0;
+      right: 90px;
+
+      .scoutbtn-inr {
+        padding: 2px 8px;
+        border-radius: 99px;
+        background: #9fe870;
+        display: flex;
+        align-items: center;
+        gap: 0px 5px;
+        color: #163300;
+        text-align: center;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 13px;
+        letter-spacing: 0.066px;
+
+        .scoutbtn-icon {
+        }
+      }
+    }
+
+    .post-otr {
+      display: flex;
+      gap: 2px 2px;
+
+      .individual-post {
+        width: 33%;
+        height: 184px;
+
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+      }
+
+      .test {
+        width: 5%;
+      }
+    }
+  }
+
+  .profileContent-right {
+    .network-otr {
+      .network-inr {
+        padding: 32px;
+        border-radius: 14px;
+        border: 0.33px solid rgba(84, 84, 88, 0.65);
+        background: #1c1c1e;
+
+        .network-heading {
+          padding-bottom: 20px;
+          color: #fff;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 28px;
+          letter-spacing: 0.35px;
+        }
+
+        .networkprofile-main {
+          display: flex;
+          flex-direction: column;
+          gap: 16px 0px;
+          height: 384px;
+          overflow: hidden;
+          overflow-y: auto;
+
+          .networkprofile-otr {
+            .networkprofile-inr {
+              display: flex;
+              gap: 0px 12px;
+
+              .networkuserImg-otr {
+                .networkUser-img {
+                  width: 32px;
+                  height: 32px;
+                  border-radius: 100%;
+                }
+              }
+
+              .networkProflie-content {
+                .Network-userName {
+                  font-family: var(--font-sf-pro-text);
+                  color: #fff;
+                  font-size: 17px;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: 22px;
+                  letter-spacing: -0.408px;
+                }
+
+                .Network-userdesc {
+                  padding: 4px 0px 4px 0px;
+                  color: #fff;
+                  font-size: 15px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 20px;
+                  letter-spacing: -0.24px;
+                }
+
+                .networkProfilebtn-otr {
+                  display: flex;
+
+                  .networkProfilebtn-inr {
+                    font-family: var(--font-sf-pro-text);
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    gap: 0px 6px;
+                    padding: 7px 20px;
+                    border-radius: 10px;
+                    border: 1px solid #9fe870;
+                    color: #9fe870;
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 18px;
+                    letter-spacing: -0.078px;
+                  }
+
+                  .plusIcon {
+                    color: transparent;
+                    width: 11px;
+                    height: 11px;
+                    object-fit: cover;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// .profileContent-left {
+//     flex: 1;
+//     display: flex;
+//     flex-direction: column;
+//     gap: 8px 0px;
+// }
+
+// .profileContent-left {
+//     flex: 1;
+//     display: flex;
+//     flex-direction: column;
+//     gap: 8px 0px;
+
+//     .profileContent-left-otr {
+//         padding: 16px 16px 0px 16px;
+
+//         .profileContent-left-inr {
+//             .profile-bg-otr {
+//                 position: relative;
+
+//                 .profileContent-left-inr {
+//                     position: relative;
+
+//                     .profile-bg-otr {
+//                         width: 225px;
+//                         padding-top: 60px;
+//                         position: relative;
+//                         margin: 0 auto;
+
+//                         .profile-bg {
+//                             width: 220px !important;
+//                             object-fit: cover;
+//                         }
+
+//                         .circle-img {
+//                             position: absolute;
+//                             right: 21px;
+//                             top: 120px;
+//                         }
+//                         .namCenter{
+//                             position: absolute;
+//                             top: 53%;
+//                             left: 48%;
+//                             transform: translateX(-50%);
+//                             border-bottom: 1px solid;
+//                             width: 85%;
+//                             padding-bottom: 8px;
+//                         }
+//                         }
+
+//                         .info-player {
+//                             position: absolute;
+//                             bottom: 49px;
+//                             left: 45%;
+//                             transform: translateX(-50%);
+
+//                             .forgap {
+//                                 display: flex;
+//                                 gap: 0px 8px;
+
+//                                 .date {
+//                                     display: flex;
+//                                 }
+//                             }
+//                         }
+
+//                         .addIcon {
+//                             position: absolute;
+//                             bottom: -5px;
+//                             left: 50%;
+//                             transform: translateX(-50%);
+//                         }
+//                     }
+
+//                     .scoutbtn-otr {
+//                         display: flex;
+//                         position: absolute;
+//                         top: 0;
+//                         right: 0;
+
+//                         .scoutbtn-inr {
+//                             padding: 2px 8px;
+//                             border-radius: 99px;
+//                             background: #9FE870;
+//                             display: flex;
+//                             align-items: center;
+//                             gap: 0px 5px;
+//                             color: #163300;
+//                             text-align: center;
+//                             font-size: 11px;
+//                             font-style: normal;
+//                             font-weight: 400;
+//                             line-height: 13px;
+//                             letter-spacing: 0.066px;
+
+//                             .scoutbtn-icon {}
+//                         }
+//                     }
+
+//                     .details {
+//                         padding-top: 200px;
+//                         text-align: center;
+
+//                         .detailname {
+//                             color: #FFF;
+//                             font-size: 22px;
+//                             font-style: normal;
+//                             font-weight: 700;
+//                             line-height: 28px;
+//                             letter-spacing: 0.35px;
+//                         }
+
+//                         .mail {
+//                             color: rgba(235, 235, 245, 0.60);
+//                             font-size: 15px;
+//                             font-style: normal;
+//                             font-weight: 400;
+//                             line-height: 20px;
+//                             letter-spacing: -0.24px;
+//                         }
+//                     }
+
+//                     .profileUserimages-otr {
+//                         .profileUserimages-inr {
+//                             display: flex;
+//                             margin: 0 auto;
+//                             width: 64px;
+//                             padding-top: 38px;
+
+//                             .userImage1 {
+//                                 position: relative;
+
+//                                 .userImage {
+//                                     width: 16px;
+//                                     height: 16px;
+//                                     width: 16px;
+//                                     height: 16px;
+//                                     border-radius: 100%;
+//                                     border: 1px solid #1C1C1E;
+//                                     display: flex;
+//                                     justify-content: center;
+//                                     align-items: center;
+//                                     background-color: yellow;
+//                                     color: black;
+//                                 }
+//                             }
+
+//                             .userImage2 {
+//                                 position: relative;
+//                                 left: -4px;
+
+//                                 .userImage {
+//                                     width: 16px;
+//                                     height: 16px;
+//                                     width: 16px;
+//                                     height: 16px;
+//                                     border-radius: 100%;
+//                                     border: 1px solid #1C1C1E;
+//                                     display: flex;
+//                                     justify-content: center;
+//                                     align-items: center;
+//                                     background-color: yellow;
+//                                     color: black;
+//                                 }
+//                             }
+
+//                             .userImage3 {
+//                                 position: relative;
+//                                 left: -8px;
+
+//                                 .userImage {
+//                                     width: 16px;
+//                                     height: 16px;
+//                                     width: 16px;
+//                                     height: 16px;
+//                                     border-radius: 100%;
+//                                     border: 1px solid #1C1C1E;
+//                                     display: flex;
+//                                     justify-content: center;
+//                                     align-items: center;
+//                                     background-color: yellow;
+//                                     color: black;
+//                                 }
+//                             }
+
+//                             .userImage4 {
+//                                 position: relative;
+//                                 left: -12px;
+
+//                                 .userImage {
+//                                     width: 16px;
+//                                     height: 16px;
+//                                     width: 16px;
+//                                     height: 16px;
+//                                     border-radius: 100%;
+//                                     border: 1px solid #1C1C1E;
+//                                     display: flex;
+//                                     justify-content: center;
+//                                     align-items: center;
+//                                     background-color: yellow;
+//                                     color: black;
+//                                 }
+//                             }
+
+//                             .userImage5 {
+//                                 position: relative;
+//                                 left: -16px;
+
+//                                 .userImage {
+//                                     width: 16px;
+//                                     height: 16px;
+//                                     width: 16px;
+//                                     height: 16px;
+//                                     border-radius: 100%;
+//                                     border: 1px solid #1C1C1E;
+//                                     display: flex;
+//                                     justify-content: center;
+//                                     align-items: center;
+//                                     background-color: yellow;
+//                                     color: black;
+//                                 }
+//                             }
+//                         }
+
+//                         .desc-userImages {
+//                             padding-top: 6px;
+//                             padding-bottom: 16px;
+//                             text-align: center;
+//                             color: rgba(235, 235, 245, 0.60);
+//                             text-align: center;
+//                             font-size: 11px;
+//                             font-style: normal;
+//                             font-weight: 400;
+//                             line-height: 13px;
+//                             letter-spacing: 0.066px;
+//                         }
+//                     }
+//                 }
+
+//                 .LastImageProfile-otr {
+//                     .LastImageProfileImgOtr {
+//                         .LastImageProfileImgInr {}
+//                     }
+
+//                     .userProfileimgOtr {
+//                         .userProfileimg {}
+//                     }
+//                 }
+
+//                 .LastImageProfile-otr {
+//                     .LastImageProfileImgOtr {
+//                         position: absolute;
+//                         top: 0px;
+//                         left: 0px;
+//                         border-radius: 14px 14px 0px;
+//                         height: 12px;
+//                         width: 100%;
+
+//                         .LastImageProfileImgInr {
+//                             border-radius: 14px 14px 0px 0px;
+//                             object-fit: cover;
+//                             height: 120px;
+//                             width: 100% !important;
+//                         }
+
+//                     }
+
+//                     // .userProfileimgOtr{
+//                     //     position: absolute;
+//                     //     bottom: 64px;
+//                     //     left: 50%;
+//                     //     transform: translateX(-50%);
+//                     //     .userProfileimg{
+//                     //         object-fit: cover;
+//                     //         border-radius: 100%;
+//                     //         width: 96px;
+//                     //         height: 96px;
+//                     //         border: 2px solid var(--System-Background-Dark-Base-Secondary, #1C1C1E);
+//                     //     }
+//                     //     .forTry{
+
+//                     //     }
+//                     // }
+//                 }
+
+//                 .userProfileimgOtr {
+//                     position: absolute;
+//                     top: 88px;
+//                     left: 50%;
+//                     transform: translateX(-50%);
+
+//                     .userProfileimg {
+//                         width: 97px;
+//                         height: 97px;
+//                         border-radius: 100%;
+//                         object-fit: cover;
+//                         border: 2px solid #1C1C1E;
+//                     }
+
+//                     .forTry {}
+//                 }
+//             }
+
+//             .expBorder {
+//                 border: 0.333px solid rgba(84, 84, 88, 0.65);
+
+//                 .expHeading {
+//                     color: #FFF;
+//                     font-size: 22px;
+//                     font-style: normal;
+//                     font-weight: 700;
+//                     line-height: 28px;
+//                     letter-spacing: 0.35px;
+//                 }
+//             }
+//         }
+
+//         .profileContent-right {
+//             .network-otr {
+//                 .network-inr {
+//                     padding: 32px;
+//                     border-radius: 14px;
+//                     border: 0.33px solid rgba(84, 84, 88, 0.65);
+//                     background: #1C1C1E;
+
+//                     .network-heading {
+//                         padding-bottom: 20px;
+//                         color: #FFF;
+//                         font-size: 22px;
+//                         font-style: normal;
+//                         font-weight: 700;
+//                         line-height: 28px;
+//                         letter-spacing: 0.35px;
+//                     }
+
+//                     .networkprofile-main {
+//                         display: flex;
+//                         flex-direction: column;
+//                         gap: 16px 0px;
+//                         height: 384px;
+//                         overflow: hidden;
+//                         overflow-y: auto;
+
+//                         .networkprofile-otr {
+//                             .networkprofile-inr {
+//                                 display: flex;
+//                                 gap: 0px 12px;
+
+//                                 .networkuserImg-otr {
+//                                     .networkUser-img {
+//                                         width: 32px;
+//                                         height: 32px;
+//                                         border-radius: 100%;
+//                                     }
+//                                 }
+
+//                                 .networkProflie-content {
+//                                     .Network-userName {
+//                                         color: #FFF;
+//                                         font-size: 17px;
+//                                         font-style: normal;
+//                                         font-weight: 600;
+//                                         line-height: 22px;
+//                                         letter-spacing: -0.408px;
+//                                     }
+
+//                                     .Network-userdesc {
+//                                         padding: 4px 0px 4px 0px;
+//                                         color: #FFF;
+//                                         font-size: 15px;
+//                                         font-style: normal;
+//                                         font-weight: 400;
+//                                         line-height: 20px;
+//                                         letter-spacing: -0.24px;
+//                                     }
+
+//                                     .networkProfilebtn-otr {
+//                                         display: flex;
+
+//                                         .networkProfilebtn-inr {
+//                                             cursor: pointer;
+//                                             display: flex;
+//                                             align-items: center;
+//                                             gap: 0px 6px;
+//                                             padding: 7px 20px;
+//                                             border-radius: 10px;
+//                                             border: 1px solid #9FE870;
+//                                             color: #9FE870;
+//                                             font-size: 13px;
+//                                             font-style: normal;
+//                                             font-weight: 600;
+//                                             line-height: 18px;
+//                                             letter-spacing: -0.078px;
+
+//                                         }
+
+//                                         .plusIcon {
+//                                             color: transparent;
+//                                             width: 11px;
+//                                             height: 11px;
+//                                             object-fit: cover;
+//                                         }
+//                                     }
+//                                 }
+
+//                             }
+//                         }
+//                     }
+
+//                 }
+//             }
+//         }
+//     }
+// }
+// .profileContent-right {
+//     .network-otr {
+//         .network-inr {
+//             padding: 32px;
+//             border-radius: 14px;
+//             border: 0.33px solid rgba(84, 84, 88, 0.65);
+//             background: #1C1C1E;
+
+//             .network-heading {
+//                 padding-bottom: 20px;
+//                 color: #FFF;
+//                 font-size: 22px;
+//                 font-style: normal;
+//                 font-weight: 700;
+//                 line-height: 28px;
+//                 letter-spacing: 0.35px;
+//             }
+
+//             .networkprofile-main {
+//                 display: flex;
+//                 flex-direction: column;
+//                 gap: 16px 0px;
+//                 height: 384px;
+//                 overflow: hidden;
+//                 overflow-y: auto;
+
+//                 .networkprofile-otr {
+//                     .networkprofile-inr {
+//                         display: flex;
+//                         gap: 0px 12px;
+
+//                         .networkuserImg-otr {
+//                             .networkUser-img {
+//                                 width: 32px;
+//                                 height: 32px;
+//                                 border-radius: 100%;
+//                             }
+//                         }
+
+//                         .networkProflie-content {
+//                             .Network-userName {
+//                                 color: #FFF;
+//                                 font-size: 17px;
+//                                 font-style: normal;
+//                                 font-weight: 600;
+//                                 line-height: 22px;
+//                                 letter-spacing: -0.408px;
+//                             }
+
+//                             .Network-userdesc {
+//                                 padding: 4px 0px 4px 0px;
+//                                 color: #FFF;
+//                                 font-size: 15px;
+//                                 font-style: normal;
+//                                 font-weight: 400;
+//                                 line-height: 20px;
+//                                 letter-spacing: -0.24px;
+//                             }
+
+//                             .networkProfilebtn-otr {
+//                                 display: flex;
+
+//                                 .networkProfilebtn-inr {
+//                                     cursor: pointer;
+//                                     display: flex;
+//                                     align-items: center;
+//                                     gap: 0px 6px;
+//                                     padding: 7px 20px;
+//                                     border-radius: 10px;
+//                                     border: 1px solid #9FE870;
+//                                     color: #9FE870;
+//                                     font-size: 13px;
+//                                     font-style: normal;
+//                                     font-weight: 600;
+//                                     line-height: 18px;
+//                                     letter-spacing: -0.078px;
+
+//                                 }
+
+//                                 .plusIcon {
+//                                     color: transparent;
+//                                     width: 11px;
+//                                     height: 11px;
+//                                     object-fit: cover;
+//                                 }
+//                             }
+//                         }
+
+//                     }
+//                 }
+//             }
+
+//         }
+//     }
+// }
+
+.exp-otr {
+  .exp-inr {
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba(84, 84, 88, 0.65);
+    }
+    .exp-main {
+      .exp-img {
+        border-radius: 100%;
+        width: 32px;
+        height: 32px;
+      }
+
+      .exp-content {
+        .exp-heading {
+          font-family: var(--font-sf-pro-text) !important;
+          color: #fff;
+          font-size: 17px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 22px;
+          letter-spacing: -0.408px;
+        }
+
+        .exp-cName {
+          color: #fff;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: -0.24px;
+          padding: 2px 0px;
+        }
+
+        .exp-date {
+          color: rgba(235, 235, 245, 0.6);
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: -0.24px;
+          padding-bottom: 12px;
+        }
+
+        .expDesc-main {
+          .exp-desc {
+            color: #fff;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: -0.078px;
+
+            .exp-more {
+              color: rgba(235, 235, 245, 0.6);
+              font-size: 13px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 18px;
+              letter-spacing: -0.078px;
+            }
+          }
+
+          .exp-moreL {
+            color: rgba(235, 235, 245, 0.6);
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: -0.078px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tophy-content {
+  .tophy-content-inr {
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba(84, 84, 88, 0.65);
+    }
+  }
+}

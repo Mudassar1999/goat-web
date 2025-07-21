@@ -1,0 +1,88 @@
+// .selectPopUp{
+//     background: var(--Fill-Color-Dark-Tertiary, rgba(118, 118, 128, 0.24));
+//     color: var(--Accessible-SystemGray-02-Light, #8E8E93);
+//     font-size: 16px;
+//     padding: 14px 24px;
+//     font-style: normal;
+//     font-weight: 400;
+//     line-height: 21px; 
+//     letter-spacing: -0.32px;
+//     border-radius: 8px;
+//     border: 2px solid transparent;
+//     transition: .3s;
+//     appearance: none;
+//     display: flex;
+//     justify-content: space-between;
+//    &.selected  {
+//       // Style changes when the input has a value (selected date)
+//       color: yellow; // Change background color when selected
+//       // Add any other styles you want for the selected date
+//     }
+// }
+// // input[type="date"]:focus{
+// //   color: white;
+// // }
+// input::-webkit-datetime-edit-day-field,
+// input::-webkit-datetime-edit-month-field,
+// input::-webkit-datetime-edit-year-field {
+//     // background-color: red;
+//     color: white;
+//     outline: none;
+// }
+
+.selectPopUp {
+  background: var(--Fill-Color-Dark-Tertiary, rgba(118, 118, 128, 0.24));
+  color: #8E8E93;
+  font-size: 16px;
+  padding: 14px 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.32px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: .3s;
+  appearance: none;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.AddThis {
+  color: white !important;
+}
+
+
+.selectPopUp:focus {
+  border: 2px solid #30D158;
+  outline: none;
+  box-shadow: none;
+}
+
+.selectPopUp option {
+  background: black;
+  color: var(--Accessible-SystemGray-02-Light, #8E8E93);
+  font-size: 16px;
+  padding: 14px 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.32px;
+}
+
+.forNumber {
+  background: var(--Fill-Color-Dark-Tertiary, rgba(118, 118, 128, 0.24));
+  color: var(--Accessible-SystemGray-02-Light, #8E8E93);
+  border: 2px solid transparent;
+  transition: .3s;
+}
+
+.forNumber:focus {
+  border: 2px solid #30D158;
+  outline: none;
+  box-shadow: none;
+}

@@ -1,0 +1,60 @@
+.logOut-Otr {
+    padding: 70px 24px 24px 24px;
+
+    .headingLogout {
+        font-family: var(--font-sf-pro-display);
+        color: #FFF;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 34px;
+        letter-spacing: 0.36px;
+    }
+
+    .desc-LogOut {
+        color: var(--Label-Color-Dark-Secondary, rgba(235, 235, 245, 0.60));
+        padding: 8px 0px 16px 0px;
+    }
+
+    .PopUpLogActions {
+        display: flex;
+        flex-direction: column;
+        gap: 8px 0px;
+
+        .delbtnotr {
+            .delbtn {
+                padding: 12px 20px;
+                font-family: var(--font-sf-pro-text);
+                color: #FFF;
+                text-align: center;
+                font-feature-settings: 'case' on;
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 22px;
+                letter-spacing: -0.408px;
+                border-radius: 10px;
+                background: var(--Default-SystemRed-Dark, #FF453A);
+
+            }
+        }
+
+        .cancelbtnotr {
+            .cancelbtn {
+                padding: 12px 20px;
+                font-family: var(--font-sf-pro-text);
+                color: #163300;
+                text-align: center;
+                font-feature-settings: 'case' on;
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 22px;
+                /* 129.412% */
+                letter-spacing: -0.408px;
+                border-radius: 10px;
+                background: #9FE870;
+            }
+        }
+    }
+}

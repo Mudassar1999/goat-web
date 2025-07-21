@@ -1,0 +1,82 @@
+footer {
+    display: flex;
+    justify-content: center;
+
+    .footer-otr {
+        width: calc(100% - 376px);
+        padding: 64px 0px 48px 0px;
+
+        @media screen and (max-width: 992px) {
+            justify-content: flex-start;
+        }
+
+        @media screen and (max-width: 992px) {
+            width: calc(100% - 176px);
+        }
+
+        @media screen and (max-width: 550px) {
+            width: calc(100% - 32px);
+        }
+
+        .footer-inr {
+
+
+
+
+
+            .row-footer {
+                display: flex;
+                justify-content: space-between;
+                /* padding: 64px 32px 48px 32px; */
+                flex-wrap: wrap;
+                gap: 32px 0px;
+
+                @media screen and (max-width: 992px) {
+                    justify-content: flex-start;
+                }
+
+                .box1-otr {
+                    width: calc(20% - 28px);
+
+                    @media screen and (max-width: 992px) {
+                        width: calc(33%);
+                    }
+
+                    @media screen and (max-width: 767px) {
+                        width: calc(50%);
+                    }
+
+
+
+                    .box-inr {
+                        .box1-heading {
+                            color: #D0D5DD;
+                            font-size: 15px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 20px;
+                            letter-spacing: -0.5px;
+                            padding-bottom: 16px;
+                        }
+
+                        .ul-box1 {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 12px 0px;
+                            .li-box1 {
+                                .item-box1 {
+                                    color: #EAECF0;
+                                    font-size: 12px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

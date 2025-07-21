@@ -1,0 +1,48 @@
+.tophy-main {
+  .tophy-heading {
+    color: #fff;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.35px;
+  }
+}
+.tophy-content {
+  .tophy-img {
+    .tophy-image {
+      width: 32px;
+      height: 32px;
+      object-fit: cover;
+      border-radius: 100%;
+    }
+    .tophy-detail {
+      .tophy-name {
+        font-family: var(--font-sf-pro-text) !important;
+        color: #fff;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: -0.408px;
+      }
+      .tophy-Cname {
+        color: #fff;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -0.24px;
+        padding: 2px 0px;
+      }
+      .tophy-desc {
+        color: rgba(235, 235, 245, 0.6);
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -0.24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+.container {
+    padding: 0;
+}
+
+.heading-bold {
+    font-family: var(--font-sf-pro-display);
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: 0.374px;
+    color: white;
+}
+
+.desc {
+    font-family: var(--font-sf-pro-text);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    /* 129.412% */
+    letter-spacing: -0.408px;
+    color: rgba(235, 235, 245, 0.60);
+}
+
+.action-main {
+    display: flex;
+    align-items: center;
+    gap: 0px 8px;
+    width: 100%;
+}
+
+.Light-smallbtn-otr {
+    display: flex;
+    width: 50%;
+
+    .Light-smallbtn-inr {
+        text-align: center;
+        width: 100%;
+        font-family: var(--font-sf-pro-display);
+        border-radius: 14px;
+        background: #9FE870;
+        color: #163300;
+        padding: 14px 41px;
+        cursor: pointer;
+    }
+}
+
+.Dark-smallbtn-otr {
+    display: flex;
+    width: 50%;
+
+    .Dark-smallbtn-inr {
+        text-align: center;
+        width: 100%;
+        font-family: var(--font-sf-pro-display);
+        border-radius: 14px;
+        background: #2C2C2E;
+        color: #FFF;
+        padding: 14px 20px;
+        cursor: pointer;
+    }
+}
+
+.phone-btn-otr {
+    display: flex;
+
+    .phone-btn-inr {}
+}
+
+
+/*===========================================
+        Page start Here
+===========================================*/
+
+
+.Splash-screen {
+    .row-splash {
+        display: flex;
+
+        .splash-content-otr {
+            width: 50%;
+
+            @media screen and (max-width: 1024px) {
+                width: 100%;
+            }
+
+            .logo-otr {
+                padding: 32px 32px 28px 32px;
+
+                .logo {
+                    width: 35px;
+                    height: 36px;
+                    object-fit: contain;
+                    cursor: pointer;
+                }
+            }
+
+            .main-splash {
+                height: calc(100vh - 192px);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .container {
+                    display: flex;
+                    justify-content: center;
+
+                    .splash-content {
+                        padding: 127px 0px;
+                        max-width: 360px;
+                        width: 100%;
+
+                        .splash-heading {}
+
+                        .splash-desc {
+                            padding: 4px 0px 32px 0px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .video-otr {
+            width: 50%;
+
+            @media screen and (max-width: 1024px) {
+                display: none;
+            }
+
+            .video {
+                height: 100vh;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

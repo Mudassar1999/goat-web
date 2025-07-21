@@ -1,0 +1,209 @@
+.journeyContainer {
+  width: calc(100% - 376px);
+  margin: 0 auto;
+  padding-top: 24px;
+
+  @media screen and (max-width: 992px) {
+    width: calc(100% - 176px);
+  }
+
+  @media screen and (max-width: 550px) {
+    width: calc(100% - 32px);
+  }
+
+  // display: flex;
+  // width: calc(100% - 376px);
+  // margin: 0 auto;
+  // gap: 0px 24px;
+  // padding-top: 32px;
+  //     @media screen and (max-width: 992px) {
+  //         width: calc(100% - 176px);
+  //         margin: 0 auto;
+  //         padding-top: 24px;
+  //     }
+
+  //     @media screen and (max-width: 550px) {
+  //         width: calc(100%);
+  //         margin: 0 auto;
+  //         padding-top: 24px;
+  //     }
+
+  .sendOffer-otr {
+    position: relative;
+    .aroww-offer {
+      position: absolute;
+    }
+
+    // @media screen and (max-width: 992px) {
+    //     left: 94px;
+    // }
+    .sendOffer-inner {
+      width: 360px;
+      margin: 0 auto;
+      padding: 32px 0 0;
+    }
+
+    .desc2 {
+      font-family: var(--font-sf-pro-text);
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 20px;
+      letter-spacing: -0.5px;
+    }
+  }
+}
+
+.offer-heading {
+  font-family: var(--font-sf-pro-text);
+  color: #fff;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0.374px;
+  padding-bottom: 4px;
+}
+
+.offer-desc {
+  font-family: var(--font-sf-pro-text);
+  color: rgba(235, 235, 245, 0.6);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+}
+
+.lastoffer-desc {
+  .offer-box {
+    .offerlast-desc {
+      font-family: var(--font-sf-pro-text);
+      color: #fff;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 20px;
+      letter-spacing: -0.5px;
+    }
+
+    .offlong-desc {
+      font-family: var(--font-sf-pro-text);
+      padding-top: 4px;
+      color: rgba(235, 235, 245, 0.6);
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: -0.24px;
+    }
+  }
+
+  .sendOfferbtn-otr {
+    width: 100%;
+    text-align: center;
+
+    .sendOfferbtn-inr {
+      font-family: var(--font-sf-pro-text);
+      border-radius: 10px;
+      background: #9fe870;
+      padding: 14px 24px;
+      border-radius: 14px;
+      color: #163300;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 22px;
+      /* 129.412% */
+      letter-spacing: -0.408px;
+    }
+  }
+}
+
+.forofferBorder1 {
+  border-radius: 16px 16px 0px 0px;
+}
+
+.forofferBorder2 {
+  border-radius: 0px 0px 16px 16px;
+}
+
+.headingOfferScout {
+  font-family: var(--font-sf-pro-text);
+  color: #fff;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+}
+
+.descOfferScout {
+  font-family: var(--font-sf-pro-text);
+  color: rgba(235, 235, 245, 0.6);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+}
+
+.acceptbtn-otr {
+  width: 50%;
+
+  .acceptbtn-inr {
+    width: 100%;
+    font-family: var(--font-sf-pro-text);
+    border-radius: 14px;
+    background: #9fe870;
+    padding: 14px 20px;
+    color: #163300;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+  }
+}
+
+.rejectbtn-otr {
+  width: 50%;
+
+  .rejectbtn-inr {
+    width: 100%;
+    font-family: var(--font-sf-pro-text);
+    border-radius: 14px;
+    background: #ff453a;
+    padding: 14px 20px;
+    color: #fff;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+  }
+}
+
+.offersActions-otr {
+  display: flex;
+  gap: 0px 8px;
+}
+
+.sendbtn-otr {
+  display: flex;
+
+  .sendbtn-inr {
+    text-align: center;
+    width: 100%;
+    font-family: var(--font-sf-pro-text);
+    border-radius: 14px;
+    background: #2c2c2e;
+    padding: 14px 20px;
+    color: #9fe870;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+  }
+}

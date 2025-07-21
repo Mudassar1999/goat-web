@@ -1,0 +1,167 @@
+.drillTextArea::placeholder {
+  color: var(--Label-Color-Dark-Secondary, rgba(235, 235, 245, 0.6));
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.24px;
+}
+
+.drillTextArea {
+  background: var(--System-Background-Dark-Elevated-Tertiary, #3a3a3c);
+  backdrop-filter: blur(10px);
+}
+
+.maintextArea {
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.maintextArea:focus {
+  outline: none;
+  box-shadow: none;
+  border: 2px solid var(--Default-SystemGreen-Dark, #30d158);
+}
+
+.profileMainActions {
+  padding-bottom: 16px;
+
+  .profileMainActions-inr {
+    display: flex;
+    gap: 0px 8px;
+
+    @media screen and (max-width: 470px) {
+      flex-direction: column;
+      gap: 8px 0px;
+    }
+  }
+}
+
+.poUpsAtions-otr {
+  display: flex;
+  gap: 0px 8px;
+  align-items: center;
+
+  .poUpsAtionsOtr {
+    .poUpsAtionsInr {
+      padding: 14px 20px;
+      border-radius: 14px;
+      border: 1px solid #9fe870;
+      color: #9fe870;
+      color: #9fe870;
+      text-align: center;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 22px;
+      letter-spacing: -0.408px;
+    }
+  }
+
+  .poUpsAtionsOtr2 {
+    .poUpsAtionsInr2 {
+    }
+  }
+}
+
+.reelsContainer {
+  width: calc(100% - 922px);
+  margin: 0 auto;
+  padding-top: 24px;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 992px) {
+    width: calc(100% - 176px);
+  }
+
+  @media screen and (max-width: 550px) {
+    width: calc(100% - 32px);
+  }
+}
+
+.mainReelOtr {
+  display: flex;
+  gap: 0px 24px;
+
+  @media screen and (max-width: 550px) {
+    gap: 0px 8px;
+  }
+}
+
+.reelsActionOtr {
+  display: flex;
+  align-items: end;
+}
+
+.mainallReels:not(:last-child) {
+  margin-bottom: 56px;
+}
+.mainallReels {
+  position: relative;
+}
+
+.mainallReels:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: -56px;
+  height: 1px;
+  left: 50%;
+  width: 73%;
+  background: rgba(84, 84, 88, 0.65);
+  transform: translateX(-50%);
+
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
+}
+
+.ReelVideo-inr {
+  width: 390px !important;
+  height: 625px !important;
+
+  @media screen and (max-width: 550px) {
+    width: 340px !important;
+  }
+
+  // @media screen and (max-width: 550px) {
+  //     width: calc(100% - 32px);
+  // }
+}
+
+.forSmallView {
+  display: none;
+
+  @media screen and (max-width: 550px) {
+    display: block;
+  }
+}
+
+.ReelimgOtr {
+  width: 36px;
+
+  @media screen and (max-width: 550px) {
+    display: none;
+  }
+}
+
+.reelIcon {
+  @media screen and (max-width: 550px) {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.reelIconMainOtr {
+  @media screen and (max-width: 550px) {
+    gap: 12px 0px;
+  }
+}
+
+.post-desc-responsive {
+  width: 390px;
+
+  @media screen and (max-width: 550px) {
+    width: 287px;
+  }
+}

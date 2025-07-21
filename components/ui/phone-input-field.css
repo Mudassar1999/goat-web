@@ -1,0 +1,29 @@
+.example ul {
+  background-color: #29292c;
+  overflow-y: auto;
+  width: max-content;
+}
+.example li:hover {
+  background-color: #3f3f46;
+}
+.example ul::-webkit-scrollbar {
+  display: none;
+}
+.example button:hover {
+  background-color: #3f3f46;
+}
+.example button:only-child {
+  color: white;
+}
+.example button {
+  color: white;
+  height: initial;
+  background-color: #29292c;
+  height: 112%;
+  border-radius: 8px;
+  /* border: red 2px solid; */
+}
+.example button:focus {
+  border: white 2px solid;
+  /* border: red 2px solid; */
+}

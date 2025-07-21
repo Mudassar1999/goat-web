@@ -1,0 +1,21 @@
+.btn-otr {
+     width: 100%;
+
+     .btn-inner {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10px;
+          padding: 14px 20px;
+          cursor: pointer;
+          width: 100%;
+     }
+
+     .leftIcon {
+          padding-right: 4px;
+     }
+
+     .rightIcon {
+          padding-left: 10px;
+     }
+}

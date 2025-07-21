@@ -1,0 +1,32 @@
+.exp-desc {
+  width: 515px;
+  @media screen and (max-width: 870px) {
+    width: 255px;
+  }
+  @media screen and (max-width: 605px) {
+    width: 200px;
+  }
+  @media screen and (max-width: 455px) {
+    width: 150px;
+  }
+}
+.popUpExperienceDesc {
+  width: 469px !important;
+  @media screen and (max-width: 650px) {
+    width: 180px !important;
+  }
+}
+
+.newExpHeading {
+  color: #fff;
+  font-family: var(--font-sf-pro-display);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.35px;
+}
+.againexpborder {
+  border: 0.333px solid
+    var(--Separator-Color-Dark-With-Transparency, rgba(84, 84, 88, 0.65));
+}
