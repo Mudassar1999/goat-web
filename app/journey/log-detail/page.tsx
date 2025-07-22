@@ -5,8 +5,9 @@ import React, { useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import axios from "axios";
 import { getAllLogs } from "@/api/Journey/getLogs";
+import { Suspense } from "react";
 
-function LogDetail() {
+function LogDetails() {
   const [individualLog, setIndividualLog] = useState<any>([]);
 
   const router = useRouter();
@@ -73,29 +74,32 @@ function LogDetail() {
           )}
 
           <div
-            className={`w-full ${(individualLog && individualLog?.stats) &&
+            className={`w-full ${
+              individualLog &&
+              individualLog?.stats &&
               "rounded-[14px] border border-zinc-600 border-opacity-60"
-              } flex-col justify-start items-start flex`}
+            } flex-col justify-start items-start flex`}
           >
             {individualLog?.stats?.map((data: any, index: number) => {
               return (
                 <div
-                  className={`w-full px-2 py-1.5 ${index % 2 === 0 && "bg-zinc-500 bg-opacity-25"
-                    } 
-                                        ${index ===
-                    individualLog?.stats.length - 1 &&
-                    "rounded-b-[12.5px]"
-                    } 
-                                        ${index === 0 && "rounded-t-[12.5px]"
-                    } border border-zinc-600 border-opacity-60 
+                  className={`w-full px-2 py-1.5 ${
+                    index % 2 === 0 && "bg-zinc-500 bg-opacity-25"
+                  } 
+                                        ${
+                                          index ===
+                                            individualLog?.stats.length - 1 &&
+                                          "rounded-b-[12.5px]"
+                                        } 
+                                        ${
+                                          index === 0 && "rounded-t-[12.5px]"
+                                        } border border-zinc-600 border-opacity-60 
                                         justify-between items-start inline-flex`}
                 >
                   <div className="text-[#ebebf599] text-16">
                     {data.stat.name}
                   </div>
-                  <div className="text-16 color-white">
-                    {data.counter}
-                  </div>
+                  <div className="text-16 color-white">{data.counter}</div>
                 </div>
               );
             })}
@@ -103,6 +107,14 @@ function LogDetail() {
         </div>
       )}
     </>
+  );
+}
+function LogDetail() {
+  return (
+    // You could have a loading skeleton as the `fallback` too
+    <Suspense>
+      <LogDetails />
+    </Suspense>
   );
 }
 

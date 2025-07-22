@@ -161,7 +161,7 @@ function Post({ singlePost, showDeleteIcon, index, pauseVideo }: postProps) {
                 <ReactPlayer
                   ref={playerRef}
                   className="react-player home-reel ReelVideo-inr"
-                  url={`${process.env.NEXT_PUBLIC_IMAGE_URL}${post?.reelPath}`}
+                  src={`${process.env.NEXT_PUBLIC_IMAGE_URL}${post?.reelPath}`}
                   loop={true}
                   playing={(isInViewport && !pauseVideo)}
                   controls={true}

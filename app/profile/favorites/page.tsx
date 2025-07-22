@@ -12,8 +12,9 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import Loading from "react-loading";
 import { useFavoritesPagination } from "@/providers/FavoritesPaginationProvider";
 import ProtectedRoutes from "../../ProtectedRoutes";
+import { Suspense } from "react";
 
-function Favorites() {
+function Favorite() {
   const searchParams = useSearchParams();
   const id = searchParams.get("id");
   const { profile } = useProfile();
@@ -92,7 +93,7 @@ function Favorites() {
   return (
     <>
       <Header />
-      <div >
+      <div>
         <InfiniteScroll
           dataLength={posts.length}
           next={() => getNextPosts(favoritesPagination?.page + 1)}
@@ -102,13 +103,13 @@ function Favorites() {
           }
           scrollThreshold="200px"
           loader={<Loading type="spokes" color="#747474" className="mx-auto" />}
-        // endMessage={
-        //   <p className="text-center">
-        //     <p className="text-center">No more favorites posts to show.</p>
-        //   </p>
-        // }
+          // endMessage={
+          //   <p className="text-center">
+          //     <p className="text-center">No more favorites posts to show.</p>
+          //   </p>
+          // }
         >
-          <div >
+          <div>
             <Reel />
           </div>
         </InfiniteScroll>
@@ -117,4 +118,14 @@ function Favorites() {
     </>
   );
 }
+
+function Favorites() {
+  return (
+    // You could have a loading skeleton as the `fallback` too
+    <Suspense>
+      <Favorite />
+    </Suspense>
+  );
+}
+
 export default ProtectedRoutes(Favorites);

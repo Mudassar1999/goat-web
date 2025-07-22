@@ -15,8 +15,9 @@ import "../../auth/signup/components/AllComponent.scss";
 import CustomButton13 from "@/components/Button/CustomButton13";
 import { Images } from "@/public/Images";
 import Image from "next/image";
+import { Suspense } from "react";
 
-function DrillDetail() {
+function DrillDetails() {
   const [isWatchDrill, setWatchDrill] = useState<boolean>(false);
   const [isViewFeedback, setViewFeedback] = useState<boolean>(false);
   const [submitDrill, setSubmitDrill] = useState<boolean>(false);
@@ -219,6 +220,15 @@ function DrillDetail() {
         </Popup>
       )}
     </>
+  );
+}
+
+function DrillDetail() {
+  return (
+    // You could have a loading skeleton as the `fallback` too
+    <Suspense>
+      <DrillDetails />
+    </Suspense>
   );
 }
 

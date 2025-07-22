@@ -57,7 +57,7 @@ function VideoPopup({ onClose, post, setPost, isUserDeleted, notificationReply }
                   </div>
                   {/* player */}
                   <ReactPlayer
-                    url={`${process.env.NEXT_PUBLIC_IMAGE_URL}${post?.reelPath}`}
+                    src={`${process.env.NEXT_PUBLIC_IMAGE_URL}${post?.reelPath}`}
                     className="comment-reel"
                     loop={true}
                     playing={isPaused ? false : true}

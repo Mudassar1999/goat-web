@@ -21,8 +21,9 @@ import Footer from "@/components/Footer";
 import { Combobox } from "@/components/ui/combobox";
 import SelectInput from "@/components/ui/selectInput";
 import Loading from "react-loading";
+import { Suspense } from "react";
 
-function AddLog() {
+function AddLogs() {
   const [checkValidation, setCheckValidation] = useState(false);
   const [isAddLogPopup, setAddLogPopup] = useState<boolean>(false);
   const [isEditLog, setEditLog] = useState<boolean>(false);
@@ -67,7 +68,6 @@ function AddLog() {
   };
 
   const changeStatHandler = (selectedStat: any) => {
-
     if (formState.stats.length > 0) {
       const hasDuplicateStat = formState.stats.some(
         (stat: any) => stat.statId === parseInt(selectedStat?.stat.id)
@@ -82,7 +82,7 @@ function AddLog() {
 
     setFormState((formState: any) => ({
       ...formState,
-      selectedStat: selectedStat?.stat?.name
+      selectedStat: selectedStat?.stat?.name,
     }));
   };
 
@@ -122,8 +122,8 @@ function AddLog() {
       ) {
         return;
       } else if (formState.stats.length <= 0) {
-        toast.warning("Please add stats to submit the log!")
-        return
+        toast.warning("Please add stats to submit the log!");
+        return;
       }
       const data = {
         // teamId: formState.team
@@ -326,12 +326,14 @@ function AddLog() {
                   max={getCurrentDate()}
                   onClick={() => openDatePicker()}
                   value={formState.date?.split("T")[0]}
-                  className={` selectPopUp w-full cursor-pointer ${formState.date !== "" ? "AddThis" : ""
-                    }
-        ${checkValidation &&
-                    formState.date === "" &&
-                    "border-2 border-[#FF453A]"
-                    }
+                  className={` selectPopUp w-full cursor-pointer ${
+                    formState.date !== "" ? "AddThis" : ""
+                  }
+        ${
+          checkValidation &&
+          formState.date === "" &&
+          "border-2 border-[#FF453A]"
+        }
             `}
                 />
                 <div className="absolute right-[24px] top-[22px] cursor-pointer">
@@ -372,34 +374,42 @@ function AddLog() {
                 Please select any role
               </p>
             )}
-            {(sportsInfo && formState?.role === "Match" && teamsData?.length > 0) && (
-              <div className="my-[24px]">
-                <div className="flex items-center font-sans text-[16px] font-normal gap-1 leading-[21px] tracking-[-0.32px] mb-[6px]">
-                  Team <span className="text-[#FF3B30]">*</span>
+            {sportsInfo &&
+              formState?.role === "Match" &&
+              teamsData?.length > 0 && (
+                <div className="my-[24px]">
+                  <div className="flex items-center font-sans text-[16px] font-normal gap-1 leading-[21px] tracking-[-0.32px] mb-[6px]">
+                    Team <span className="text-[#FF3B30]">*</span>
+                  </div>
+                  <Combobox
+                    onChange={changeTeamHandler}
+                    placeholder={"Choose team"}
+                    data={
+                      formState?.role === "Training" || !formState?.role
+                        ? []
+                        : teamsData
+                    }
+                    displayValue={(x: any) => x?.name}
+                    defaultSelectedValue={
+                      teamsData?.find(
+                        (teams: any) => teams?.id === formState?.team
+                      )?.name
+                    }
+                  />
+                  {checkValidation &&
+                    formState?.role === "Match" &&
+                    formState.team === "" && (
+                      <p className="mb-2 text-base text-[#FF453A]">
+                        Please select Valid team
+                      </p>
+                    )}
                 </div>
-                <Combobox
-                  onChange={changeTeamHandler}
-                  placeholder={"Choose team"}
-                  data={
-                    formState?.role === "Training" || !formState?.role
-                      ? []
-                      : teamsData
-                  }
-                  displayValue={(x: any) => x?.name}
-                  defaultSelectedValue={teamsData?.find((teams: any) => teams?.id === formState?.team)?.name}
-                />
-                {checkValidation &&
-                  formState?.role === "Match" &&
-                  formState.team === "" && (
-                    <p className="mb-2 text-base text-[#FF453A]">
-                      Please select Valid team
-                    </p>
-                  )}
-              </div>
-            )}
+              )}
           </div>
 
-          <div className={`h-[1px] bg-[#545458a8] mb-[24px] ${(formState?.role === "Training" || formState?.role === "") && "mt-[24px]"}`} />
+          <div
+            className={`h-[1px] bg-[#545458a8] mb-[24px] ${(formState?.role === "Training" || formState?.role === "") && "mt-[24px]"}`}
+          />
 
           <div className="px-[16px] py-[24px] bg-[#1C1C1E] rounded-[14px] flex-col justify-start items-start inline-flex w-full min-h-[200px] mb-[24px]">
             <div className="flex justify-between item-center w-full">
@@ -414,19 +424,23 @@ function AddLog() {
 
             {formState?.stats.length > 0 ? (
               <div
-                className={`w-full ${formState.stats && "rounded-[14px] border border-[#545458a6]"
-                  } flex-col justify-start items-start flex mt-[16px]`}
+                className={`w-full ${
+                  formState.stats && "rounded-[14px] border border-[#545458a6]"
+                } flex-col justify-start items-start flex mt-[16px]`}
               >
                 {formState?.stats.map((data: any, index: number) => {
                   return (
                     <div
-                      className={`w-full px-[8px] py-[6px] ${index % 2 === 0 && "bg-[#7676803d]"
-                        }
-                   ${index === formState?.stats.length - 1 && "rounded-b-[13px]"
-                        } 
-                   ${index === 0 && "rounded-t-[13px]"} ${index !== formState?.stats.length - 1 &&
-                        "border-b border-b-[#545458a6]"
-                        } 
+                      className={`w-full px-[8px] py-[6px] ${
+                        index % 2 === 0 && "bg-[#7676803d]"
+                      }
+                   ${
+                     index === formState?.stats.length - 1 && "rounded-b-[13px]"
+                   } 
+                   ${index === 0 && "rounded-t-[13px]"} ${
+                     index !== formState?.stats.length - 1 &&
+                     "border-b border-b-[#545458a6]"
+                   } 
                    justify-between items-start inline-flex text-16`}
                       onClick={() =>
                         handleStatPressed(data.statId, data.counter)
@@ -466,6 +480,15 @@ function AddLog() {
       )}
       <Footer />
     </>
+  );
+}
+
+function AddLog() {
+  return (
+    // You could have a loading skeleton as the `fallback` too
+    <Suspense>
+      <AddLogs />
+    </Suspense>
   );
 }
 

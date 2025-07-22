@@ -10,8 +10,9 @@ import { useRouter } from "next/navigation";
 import ViewOffer from "../profile/components/offers/ViewOffer";
 import FeedbackNotification from "../journey/components/FeedbackNotification";
 import { useNotifications } from "@/providers/NotificationProvider";
+import { Suspense } from "react";
 
-function Notification() {
+function Notifications() {
   const [singleNotification, setSingleNotification] = useState<any>({});
   const [notification, setNotification] = useState<any>({});
   const [loading, setLoading] = useState<boolean>(false);
@@ -117,4 +118,14 @@ function Notification() {
     </>
   );
 }
-export default Notification;
+
+export default function Notification() {
+  return (
+    // You could have a loading skeleton as the `fallback` too
+    <Suspense>
+      <Notifications />
+    </Suspense>
+  )
+}
+
+// export default Notification;

@@ -25,8 +25,9 @@ import { useFavoritesPagination } from "@/providers/FavoritesPaginationProvider"
 import { Images } from "@/public/Images";
 import Image from "next/image";
 import ProtectedRoutes from "../ProtectedRoutes";
+import { Suspense } from "react";
 
-function Profile() {
+function Profiles() {
   const { profile, setProfile } = useProfile();
   const searchParams = useSearchParams();
   const id = searchParams.get("id");
@@ -112,8 +113,8 @@ function Profile() {
     <>
       <Header
         setCurrentTab={setCurrentTab}
-      // message={message}
-      // setMessage={setMessage}
+        // message={message}
+        // setMessage={setMessage}
       />
       <div className="">
         {offerDetails ? (
@@ -235,4 +236,13 @@ function Profile() {
     </>
   );
 }
+function Profile() {
+  return (
+    // You could have a loading skeleton as the `fallback` too
+    <Suspense>
+      <Profiles />
+    </Suspense>
+  );
+}
+
 export default ProtectedRoutes(Profile);

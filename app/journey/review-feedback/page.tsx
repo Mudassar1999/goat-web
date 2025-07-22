@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import { toast } from "react-toastify";
 import axios from "axios";
 import { ArrowLeftIcon } from "lucide-react";
@@ -7,8 +7,9 @@ import { useRouter, useSearchParams } from "next/navigation";
 import CustomButton from "@/components/Button/CustomButton";
 import Header from "@/components/Header";
 import { TextArea } from "@/components/ui/textArea";
+import { Suspense } from "react";
 
-function Feedback() {
+function Feedbacks() {
   const [formState, setFormState] = useState<any>({
     feedback: "",
   });
@@ -99,6 +100,14 @@ function Feedback() {
         </div>
       </div>
     </>
+  );
+}
+function Feedback() {
+  return (
+    // You could have a loading skeleton as the `fallback` too
+    <Suspense>
+      <Feedbacks />
+    </Suspense>
   );
 }
 

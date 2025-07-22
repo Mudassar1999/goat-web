@@ -1,12 +1,15 @@
 "use client";
-import React, { useEffect, useState } from 'react'
-import { useRouter, useSearchParams } from 'next/navigation'
-import { ArrowLeftIcon } from 'lucide-react'
-import axios from 'axios'
-import "../../auth/signup/components/AllComponent.scss"
-import { getFirstCharCap } from '@/utils/getFirstCharCap';
+export const dynamic = "force-dynamic";
 
-function ReviewedLogDetail() {
+import React, { useEffect, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
+import { ArrowLeftIcon } from "lucide-react";
+import axios from "axios";
+import "../../auth/signup/components/AllComponent.scss";
+import { getFirstCharCap } from "@/utils/getFirstCharCap";
+import { Suspense } from "react";
+
+function ReviewedLogDetails() {
   const [individualLog, setIndividualLog] = useState<any>([]);
 
   const router = useRouter();
@@ -35,7 +38,7 @@ function ReviewedLogDetail() {
   useEffect(() => {
     getAllReviewedLogs();
   }, []);
-  
+
   return (
     <>
       <div className="w-full lg:w-[80%] m-auto px-[32px] pt-[24px]">
@@ -51,45 +54,49 @@ function ReviewedLogDetail() {
             <span className="heading-bold-22">
               Details of log are given below.
             </span>
-            <p className="text-[#ebebf599] text-[12px] 
-        font-normal font-sans leading-[16px]">
+            <p
+              className="text-[#ebebf599] text-[12px] 
+        font-normal font-sans leading-[16px]"
+            >
               The name of player who has send the Log is{" "}
               {individualLog?.User?.firstName +
                 " " +
                 individualLog?.User?.lastName}
               .
             </p>
-            {individualLog?.status && <div className="flex gap-2 justify-end text-16">
-              <p>
-                Log Status:
-              </p>
-              <span className="text-white">{getFirstCharCap(individualLog?.status)}</span>
-            </div>}
+            {individualLog?.status && (
+              <div className="flex gap-2 justify-end text-16">
+                <p>Log Status:</p>
+                <span className="text-white">
+                  {getFirstCharCap(individualLog?.status)}
+                </span>
+              </div>
+            )}
 
             {individualLog?.stats?.length > 0 ? (
               <div
-                className={`w-full ${individualLog?.stats &&
+                className={`w-full ${
+                  individualLog?.stats &&
                   "rounded-[14px] border border-zinc-600 border-opacity-60"
-                  } flex-col justify-start items-start flex mt-3`}
+                } flex-col justify-start items-start flex mt-3`}
               >
                 {individualLog?.stats?.map((data: any, index: number) => {
                   return (
                     <div
-                      className={`w-full px-2 py-1.5 ${index % 2 === 0 && "bg-zinc-500 bg-opacity-25"
-                        }
-                   ${index === individualLog?.stats?.length - 1 &&
-                        "rounded-b-[14px]"
-                        } 
-                   ${index === 0 && "rounded-t-[14px]"
-                        } border border-zinc-600 border-opacity-60 
+                      className={`w-full px-2 py-1.5 ${
+                        index % 2 === 0 && "bg-zinc-500 bg-opacity-25"
+                      }
+                   ${
+                     index === individualLog?.stats?.length - 1 &&
+                     "rounded-b-[14px]"
+                   } 
+                   ${
+                     index === 0 && "rounded-t-[14px]"
+                   } border border-zinc-600 border-opacity-60 
                    justify-between items-start inline-flex text-16`}
                     >
-                      <div>
-                        {data?.stat?.name}
-                      </div>
-                      <div className="text-white">
-                        {data?.counter}
-                      </div>
+                      <div>{data?.stat?.name}</div>
+                      <div className="text-white">{data?.counter}</div>
                     </div>
                   );
                 })}
@@ -103,6 +110,15 @@ function ReviewedLogDetail() {
         )}
       </div>
     </>
+  );
+}
+
+function ReviewedLogDetail() {
+  return (
+    // You could have a loading skeleton as the `fallback` too
+    <Suspense>
+      <ReviewedLogDetails />
+    </Suspense>
   );
 }
 

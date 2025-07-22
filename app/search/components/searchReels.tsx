@@ -96,7 +96,7 @@ const SearchReels = () => {
                         >
                           <ReactPlayer
                             className="posts-reel"
-                            url={`${process.env.NEXT_PUBLIC_IMAGE_URL}${item?.reelPath}`}
+                            src={`${process.env.NEXT_PUBLIC_IMAGE_URL}${item?.reelPath}`}
                             loop={true}
                             playing={isPlaying === item.id}
                             width="100%"

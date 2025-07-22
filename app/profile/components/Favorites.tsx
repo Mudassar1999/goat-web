@@ -105,7 +105,7 @@ function Favorites() {
                           >
                             <ReactPlayer
                               className="posts-reel h-[100%]"
-                              url={`${process.env.NEXT_PUBLIC_IMAGE_URL}${item?.post?.reelPath}`}
+                              src={`${process.env.NEXT_PUBLIC_IMAGE_URL}${item?.post?.reelPath}`}
                               loop={true}
                               playing={isPlaying === item?.post?.id}
                               width="100%"

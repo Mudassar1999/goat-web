@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: false,
   images: {
-    domains: ["goatbolbstorage.blob.core.windows.net"],
+    domains: ["goatstorage.blob.core.windows.net"],
   },
   eslint: {
     ignoreDuringBuilds: true,

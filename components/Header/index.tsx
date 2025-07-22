@@ -16,16 +16,20 @@ import axios from "axios";
 import { useGoatDrill } from "@/providers/GoatDrillsProvider";
 import { useSearch } from "@/providers/SearchProvider";
 import { useSearchTab } from "@/providers/SearchTabProvider";
+import { Suspense } from "react";
 
-const Header = ({
-  setVideoPostStatus,
-  setCurrentTab,
-}: any) => {
+const Header = ({ setVideoPostStatus, setCurrentTab }: any) => {
   const pathname = usePathname();
   const router = useRouter();
   const { posts, setPosts } = usePosts();
-  const { setUserSearch, setReelsSearch, searchValue, setSearchValue, setSearchLoading } = useSearch()
-  const { setGoatDrill } = useGoatDrill()
+  const {
+    setUserSearch,
+    setReelsSearch,
+    searchValue,
+    setSearchValue,
+    setSearchLoading,
+  } = useSearch();
+  const { setGoatDrill } = useGoatDrill();
   const { searchTab, setSearchTab } = useSearchTab();
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -47,7 +51,6 @@ const Header = ({
   let timeoutId: any;
 
   const [logoutPopup, setLogoutPopup] = useState<boolean>(false);
-
 
   // Sticky Navbar
   const [sticky, setSticky] = useState(false);
@@ -76,12 +79,12 @@ const Header = ({
     if (searchValue !== "") {
       let pageType = "usersPage";
       const searchResult = await getSearchPosts(1, searchValue, pageType);
-      setUserSearch(searchResult?.usersPagination)
-      setReelsSearch(searchResult?.reelsPagination)
+      setUserSearch(searchResult?.usersPagination);
+      setReelsSearch(searchResult?.reelsPagination);
       setPosts(searchResult?.reelsPagination?.results);
     }
     if (!pathname.startsWith("/search")) {
-      router.push("/search")
+      router.push("/search");
     }
     // setPosts(searchResult);
     // router.push("/profile/posts?search=true");
@@ -109,7 +112,7 @@ const Header = ({
     } else if (title === "Notifications") {
       setShowNotifications(!showNotifications);
     } else if (title === "Search") {
-      handleInputFocus()
+      handleInputFocus();
     } else {
     }
   };
@@ -144,10 +147,15 @@ const Header = ({
     if (searchValue !== "" || value !== "") {
       timeoutId = setTimeout(async () => {
         let pageType = searchTab === "users" ? "usersPage" : "reelsPage";
-        const searchResult = await getSearchPosts(1, value, pageType, setSearchLoading);
-        setSearchValue(value)
-        setUserSearch(searchResult?.usersPagination)
-        setReelsSearch(searchResult?.reelsPagination)
+        const searchResult = await getSearchPosts(
+          1,
+          value,
+          pageType,
+          setSearchLoading
+        );
+        setSearchValue(value);
+        setUserSearch(searchResult?.usersPagination);
+        setReelsSearch(searchResult?.reelsPagination);
         setPosts(searchResult?.reelsPagination?.results);
       }, 1000);
     }
@@ -198,10 +206,10 @@ const Header = ({
     if (pathname.startsWith("/search")) {
       setInputFocused(true);
     } else {
-      setSearchTab("users")
-      setSearchValue("")
-      setUserSearch([])
-      setReelsSearch([])
+      setSearchTab("users");
+      setSearchValue("");
+      setUserSearch([]);
+      setReelsSearch([]);
       setInputFocused(false);
     }
   }, [pathname]);
@@ -233,8 +241,9 @@ const Header = ({
   return (
     <>
       <div
-        className={`navbar-main ${sticky ? "shadow-sticky header-fixed !z-[1]" : "relative"
-          }`}
+        className={`navbar-main ${
+          sticky ? "shadow-sticky header-fixed !z-[1]" : "relative"
+        }`}
       >
         <div className="navbar-otr">
           <div className="navbar-inr">
@@ -283,8 +292,9 @@ const Header = ({
                 return (
                   <li
                     key={menuItem.id}
-                    className={`li-items cursor-pointer relative ${isSelected() ? "text-[#9FE870]" : "text-[#ebebf599]"
-                      }`}
+                    className={`li-items cursor-pointer relative ${
+                      isSelected() ? "text-[#9FE870]" : "text-[#ebebf599]"
+                    }`}
                     onClick={() => handleMenuItemClick(menuItem.title)}
                   >
                     {menuItem.icon &&
@@ -373,11 +383,12 @@ const Header = ({
                   {menuData.map((menuItem: any, index) => (
                     <li
                       key={menuItem.id}
-                      className={`li-items cursor-pointer ${(activeTab === "" && pathname === menuItem.path) ||
+                      className={`li-items cursor-pointer ${
+                        (activeTab === "" && pathname === menuItem.path) ||
                         activeTab === menuItem.title
-                        ? "text-[#9FE870]"
-                        : "text-[#ebebf599]"
-                        }`}
+                          ? "text-[#9FE870]"
+                          : "text-[#ebebf599]"
+                      }`}
                       onClick={() => handleMenuItemClick(menuItem.title)}
                     >
                       {menuItem.icon &&
@@ -396,10 +407,12 @@ const Header = ({
           <div />
 
           {showNotifications && (
-            <Notifications
-              notificationRef={notificationRef}
-              setNotificationCount={setNotificationCount}
-            />
+            <Suspense>
+              <Notifications
+                notificationRef={notificationRef}
+                setNotificationCount={setNotificationCount}
+              />
+            </Suspense>
           )}
           {/* {logoutPopup && <LogoutPopup onClose={() => setLogoutPopup(false)} />} */}
         </div>

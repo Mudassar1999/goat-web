@@ -182,7 +182,7 @@ function PostVideoPopup({ onClose, setPauseVideo }: any) {
                     <div className="w-1/3 h-[129px] rounded-[14px] relative bg-black">
                       <>
                         <ReactPlayer
-                          url={`${process.env.NEXT_PUBLIC_IMAGE_URL}${postVideoData?.reelPath}`}
+                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}${postVideoData?.reelPath}`}
                           className="uploaded-reel"
                           loop={true}
                           width="100%"
