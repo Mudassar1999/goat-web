@@ -212,7 +212,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                           </li>
                           <li>
                             <Link
-                              href="/admin//club"
+                              href="/admin/club"
                               style={sfProDisplayStyle}
                               className={`text-bodydark1 group relative flex items-center gap-2.5 rounded-sm px-4 py-1.5 duration-300 ease-in-out hover:bg-white hover:text-black 
                               ${
