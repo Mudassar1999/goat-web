@@ -239,7 +239,7 @@ import Profiles from "./profiles";
 function Profile() {
   return (
     // You could have a loading skeleton as the `fallback` too
-    <Suspense>
+    <Suspense fallback={<div>Loading...</div>}>
       <Profiles />
     </Suspense>
   );
