@@ -19,12 +19,16 @@ const CreateAccount = ({
 }: any) => {
   const [value, setValue] = useState<any>("");
   const { formState } = useForm();
+  const [isAuthenticating, setIsAuthenticating] = useState(false);
 
   const continueWithMobileNumber = () => {
     setCurrentStep(2);
   };
 
   const continueWithGoogle = () => {
+    if (isAuthenticating) return; // Prevent multiple clicks
+
+    setIsAuthenticating(true); // Set loading true
     const provider = new GoogleAuthProvider();
     signInWithPopup(auth, provider)
       .then((data: any) => {
@@ -38,6 +42,9 @@ const CreateAccount = ({
       })
       .catch((error: any) => {
         console.error("Error during document search:", error);
+      })
+       .finally(() => {
+        setIsAuthenticating(false); // Always reset
       });
   };
   const continueWithFacebook = () => {

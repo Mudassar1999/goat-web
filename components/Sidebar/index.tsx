@@ -140,7 +140,6 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                 {(handleClick, open) => {
                   return (
                     <React.Fragment>
-                      <li>
                         <Link
                           href="/admin/home"
                           style={sfProDisplayStyle}
@@ -154,7 +153,6 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                           <HomeIcon />
                           Home
                         </Link>
-                      </li>
                       <Link
                         href="#"
                         style={sfProDisplayStyle}

@@ -60,7 +60,7 @@ const MultiStepForm = ({
     },
     {
       condition: currentStep === 2,
-      component: <SelectRole />,
+      component: () => <SelectRole />,
     },
     {
       condition: currentStep === 3,

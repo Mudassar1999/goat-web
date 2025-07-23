@@ -254,8 +254,8 @@ const Footer = () => {
         <div className="footer-otr">
           <div className="footer-inr">
             <div className="row-footer">
-              {footerData.map((data: any) => (
-                <div className="box1-otr">
+              {footerData.map((data: any , index:number) => (
+                <div className="box1-otr"  key={data.id || index}>
                   <div className="box-inr">
                     <div>
                       <p className="box1-heading footer-text-bold-15 color-gray-300 ">{data.title}</p>
