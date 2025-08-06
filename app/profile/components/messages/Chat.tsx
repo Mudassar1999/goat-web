@@ -43,6 +43,7 @@ function Chat() {
   const [firstRender, setFirstRender] = useState<boolean>(false);
 
   useEffect(() => {
+    // socket = io(`http://172.174.245.80:3000/`, {
     socket = io(`http://172.174.245.80:3000/`, {
       transports: ["websocket"],
       autoConnect: true,
